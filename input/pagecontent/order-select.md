@@ -1,10 +1,11 @@
 ### `order-select`
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 1.0
-| hookVersion | 1.0
-| Hook maturity | [4 - Documented](hook-definitions/###hook-maturity-model)
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 1.0 |
+| hookVersion | 1.0 |
+| hookMaturity | [4 - Documented](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Workflow
 
@@ -16,7 +17,7 @@ This hook occurs when a clinician initially selects one or more new orders from 
 
 This hook is intended to replace (deprecate) the medication-prescribe hook.
 
-![Ordering Flow Diagram](input\images\orderingflow.png)
+![Ordering Flow Diagram](orderingflow.png)
 
 #### Context
 

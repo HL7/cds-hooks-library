@@ -1,10 +1,11 @@
 Test### `order-sign`
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 1.0
-| hookVersion | 1.0
-| Hook maturity | [5 - Mature](hook-definitions/###hook-maturity-model)
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 1.0 |
+| hookVersion | 1.0 |
+| hookMaturity | [5 - Mature](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Workflow
 

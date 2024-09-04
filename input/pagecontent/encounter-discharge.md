@@ -1,10 +1,11 @@
 ### `encounter-discharge`
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 1.0
-| hookVersion | 1.0
-| hookMaturity | [1 - Submitted](hook-definitions/###hook-maturity-model)
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 1.0 |
+| hookVersion | 1.0 |
+| hookMaturity | [1 - Submitted](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Workflow
 

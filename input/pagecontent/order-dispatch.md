@@ -4,7 +4,8 @@
 | ---- | ----
 | specificationVersion | 2.0
 | hookVersion | 1.1
-| hookMaturity | [0 - Draft](hook-definitions/###hook-maturity-model)
+| hookMaturity | [0 - Draft](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Workflow
 

@@ -1,14 +1,15 @@
 ### `order-review`
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 1.0
-| hookVersion | 1.0
-| Hook maturity | [3 - Considered](/hooks/###hook-maturity-model)
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 1.0 |
+| hookVersion | 1.0 |
+| hookMaturity | [3 - Considered](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Deprecation Notice
 
-This hook is deprecated in favor of the `order-sign` hooks, with the goal of  clarifying workflow trigger points and supporting orders beyond medications. In this refactoring, `medication-prescribe` and `order-review` hooks are being deprecated in favor of newly created [`order-select`](hooks-content/###order-select) and [`order-sign`](hooks-content/###order-sign) hooks. This notice is a placeholder to this effect while CDS Hooks determines the [appropriate process for deprecating hooks](https://github.com/cds-hooks/docs/issues/433).
+This hook is deprecated in favor of the `order-sign` hooks, with the goal of  clarifying workflow trigger points and supporting orders beyond medications. In this refactoring, `medication-prescribe` and `order-review` hooks are being deprecated in favor of newly created [`order-select`](order-select.md) and [`order-sign`](order-sign.md) hooks. This notice is a placeholder to this effect while CDS Hooks determines the [appropriate process for deprecating hooks](https://github.com/cds-hooks/docs/issues/433).
 
 #### Workflow
 

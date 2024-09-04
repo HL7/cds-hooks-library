@@ -1,13 +1,14 @@
 ### `patient-view`
 
 !!! info
-    This page defines a workflow [hook](/hook-defintions/###hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a **build** at the level of **[Trial Use](http://hl7.org/fhir/versions.html#std-processs)**.
+    This page defines a workflow [hook](https://build.fhir.org/ig/HL7/cds-hooks/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a **build** at the level of **[Trial Use](http://hl7.org/fhir/versions.html#std-processs)**.
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 1.0
-| hookVersion | 1.0
-| hookMaturity | [5 - Mature](/hooks/###hook-maturity-model)
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 1.0 |
+| hookVersion | 1.0 |
+| hookMaturity | [5 - Mature](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Workflow
 

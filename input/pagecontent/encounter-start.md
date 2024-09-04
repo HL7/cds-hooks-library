@@ -9,11 +9,12 @@
     - Is there value in an encounter start hook pairing with an (typically inpatient) encounter discharge hook?<br/> 
     - Please explain your encounter workflow.<br/>
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 1.0
-| hookVersion | 1.0
-| hookMaturity | 1 - Submitted
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 1.0 |
+| hookVersion | 1.0 |
+| hookMaturity | [1 - Submitted](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+{:.grid}
 
 #### Workflow
 
