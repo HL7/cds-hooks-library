@@ -43,15 +43,22 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
-#
+pages:
+  index.md:
+    title: Home
+  allergyintolerance-create.md:
+  appointment-book.md:
+  encounter-discharge.md:
+  encounter-start.md:
+  medication-prescribe.md:
+  medication-refill.md:
+  order-dispatch.md:
+  order-review.md:
+  order-select.md:
+  order-sign.md:
+  patient-view.md:
+  problem-list-item-create.md:
+  template.md:
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -75,7 +82,7 @@ publisher:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  CDS Hooks: https://build.fhir.org/ig/HL7/cds-hooks
+  Home: https://build.fhir.org/ig/HL7/cds-hooks
   Hook Library:
     allergyintolerance-create (1): allergyintolerance-create.html
     appointment-book (1): appointment-book.html
