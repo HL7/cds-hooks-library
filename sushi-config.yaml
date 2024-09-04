@@ -75,7 +75,7 @@ publisher:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  CDS Hooks: ../cds-hooks
+  CDS Hooks: https://build.fhir.org/ig/HL7/cds-hooks    #TODO - need to figure something out, here
   Hook library: index.mc
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
