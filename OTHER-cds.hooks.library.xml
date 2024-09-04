@@ -21,4 +21,5 @@
 <page key="patient-view" name="Patient View"/>
 <page key="problem-list-item-create" name="Problem List Item Create"/>
 <page key="toc" name="Table of Contents"/>
+<page key="template" name="Template"/>
 </specification>

@@ -82,13 +82,14 @@ menu:
     encounter-discharge (1): encounter-discharge.html
     encounter-start (1): encounter-start.html
     medication-refill (1): medication-refill.html
-    order-dispatch (5): order-dispatch.html
+    order-dispatch (0): order-dispatch.html
     order-select (4) : order-select.html
     order-sign (5): order-sign.html
     patient-view (5): patient-view.html
     problem-list-item-create (1): problem-list-item-create.html
     medication-prescribe (deprecated): medication-prescribe.html
     order-review (deprecated): order-review.html
+    template: template.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

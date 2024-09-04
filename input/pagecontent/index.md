@@ -10,23 +10,22 @@ This is the continuous integration, community release of the CDS Hooks specifica
 -->
 ## CDS Hooks Library
 
-The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The names of the below hooks hyperlink to their specification and the number preceding their name indicates their maturity, according to the [CDS Hooks Maturity Model](../cds-hooks/#hook-maturity-model). 
-New hooks are proposed in a [prescribed format](../cds-hooks/#hook-definition-format) using the [documentation template](https://github.com/cds-hooks/docs/wiki/Proposed-Hooks) by submitting a pull request for community feedback. Hooks are versioned, and mature according to the Hook Maturity Model.
+The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The names of the below hooks hyperlink to their specification and the number preceding their name indicates their maturity, according to the [CDS Hooks Maturity Model](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model). 
+New hooks are proposed in a [prescribed format](https://build.fhir.org/ig/HL7/cds-hooks/#hook-definition-format) using the [documentation template](template.html) by submitting a pull request for community feedback. Hooks are versioned, and mature according to the Hook Maturity Model.
 Anyone may propose a new CDS Hooks hook.
 
 See https://cds-hooks.org/ for additional information, resources and ways to get involved.
 
-
-
-* [allergyintolerance-create](allergyintolerance-create.md) (1)
-* [appointment-book](appointment-book.md) (1)
-* [encounter-discharge](encounter-discharge.md) (1)
-* [encounter-start](encounter-start.md) (1)
-* [medication-refill](medication-refill.md) (1)
-* [order-dispatch](order-dispatch.md) (5 -- *iav - what, really? is this right?)
-* [order-select](order-select) (4)
-* [order-sign](order-sign.md) (5)
-* [patient-view](patient-view.md) (5)
-* [problem-list-item-create](problem-list-item-create.md) (1)
-* [medication-prescribe](medication-prescribe.md) (deprecated)
-* [order-review](order-review.md) (deprecated)
+* [allergyintolerance-create](allergyintolerance-create.html) (1)
+* [appointment-book](appointment-book.html) (1)
+* [encounter-discharge](encounter-discharge.html) (1)
+* [encounter-start](encounter-start.html) (1)
+* [medication-refill](medication-refill.html) (1)
+* [order-dispatch](order-dispatch.html) (0)
+* [order-select](order-select.html) (4)
+* [order-sign](order-sign.html) (5)
+* [patient-view](patient-view.html) (5)
+* [problem-list-item-create](problem-list-item-create.html) (1)
+* [medication-prescribe](medication-prescribe.html) (deprecated)
+* [order-review](order-review.html) (deprecated)
+* [template hook](template.html)

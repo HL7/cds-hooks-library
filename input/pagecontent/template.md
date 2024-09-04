@@ -1,17 +1,17 @@
 # <mark>`hook-name-expressed-as-noun-verb`</mark>
 
 !!! info
-    This page defines a workflow [hook](../../specification/current/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a <mark>**build | snapshot | ballot | release**</mark> at the level of <mark>**[Draft | Trial Use | Normative | Informative | Deprecated](http://hl7.org/fhir/versions.html#std-processs)**</mark>
+    This page defines a workflow [hook](https://build.fhir.org/ig/HL7/cds-hooks/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a <mark>**build | snapshot | ballot | release**</mark> at the level of <mark>**[Draft | Trial Use | Normative | Informative | Deprecated](http://hl7.org/fhir/versions.html#std-processs)**</mark>
 
 | Metadata | Value
 | ---- | ----
 | specificationVersion | 1.0
 | hookVersion | 1.0
-| hookMaturity | [0 - Draft](../../specification/current/#hook-maturity-model)
+| hookMaturity | [0 - Draft](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model)
 
 ## Workflow
 
-<mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format](../../specification/current/#hook-definition-format).</mark>
+<mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format](https://build.fhir.org/ig/HL7/cds-hooks/#hook-definition-format).</mark>
 
 ## Context
 
