@@ -7,18 +7,18 @@ id: cds.hooks.library
 canonical: http://cds-hooks.hl7.org/library
 name: CDSHooksLibrary
 title: CDS Hooks Library
-description: This publication is a library of CDS Hook definitions for use with the CDS Hooks Specification.
+description: "CDS Hooks describes a \"hook\"-based pattern for invoking decision support from within a clinician\'s workflow. The CDS Hook Library defines hooks standardized across the community."
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2024+
+copyrightYear: 2019+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 publisher:
-  name: HL7 International / Clinical Decision Support
-  url: https://www.hl7.org/Special/committees/dss/index.cfm
-  # email: test@example.org
+  name: Clinical Decision Support WG
+  url: http://www.hl7.org/Special/committees/dss/index.cfm
+  email: cds@lists.HL7.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
