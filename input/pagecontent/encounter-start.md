@@ -1,6 +1,6 @@
 ### `encounter-start`
 
-<blockquote>
+<blockquote style="background-color: #FFD580;">
     <b>Looking for Feedback:</b>
     Hey implementers, we want to hear from you!
   <ul>
