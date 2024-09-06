@@ -1,7 +1,8 @@
 ### `encounter-start`
 
 <blockquote>
-    <b>Hey implementers, we want to hear from you!</b>
+    <b>Looking for Feedback:</b>
+    Hey implementers, we want to hear from you!
   <ul>
     <li>What's the greatest opportunity for delivering remote CDS at the start of an encounter?</li>
     <li>For which users should this hook fire?</li>
