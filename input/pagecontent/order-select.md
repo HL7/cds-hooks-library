@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [4 - Documented](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [4 - Documented]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 #### Workflow
@@ -31,6 +31,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `selections` | REQUIRED | No| *array* | The FHIR id of the newly selected order(s).<br />The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
 `draftOrders` | REQUIRED | No | *object* | A Bundle of FHIR request resources with a draft status, representing orders that aren't yet signed from the current ordering session. 
+{:.grid}
 
 #### A Note Concerning FHIR Versions
 
@@ -559,3 +560,4 @@ Version | Description
 1.0 | Initial Release
 1.0.1 | Small documentation correction
 1.0.2 | Add DeviceRequest to list of order resources for R4.
+{:.grid}

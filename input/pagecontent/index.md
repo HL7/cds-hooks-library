@@ -10,8 +10,8 @@ This is the continuous integration, community release of the CDS Hooks specifica
 -->
 ## CDS Hooks Library
 
-The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The names of the below hooks hyperlink to their specification and the number preceding their name indicates their maturity, according to the [CDS Hooks Maturity Model](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model). 
-New hooks are proposed in a [prescribed format](https://build.fhir.org/ig/HL7/cds-hooks/#hook-definition-format) using the [documentation template](template.html) by submitting a pull request for community feedback. Hooks are versioned, and mature according to the Hook Maturity Model.
+The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The names of the below hooks hyperlink to their specification and the number preceding their name indicates their maturity, according to the [CDS Hooks Maturity Model]({{site.data.fhir.cdshooks}}#hook-maturity-model). 
+New hooks are proposed in a [prescribed format]({{site.data.fhir.cdshooks}}#hook-definition-format) using the [documentation template](template.html) by submitting a pull request for community feedback. Hooks are versioned, and mature according to the Hook Maturity Model.
 Anyone may propose a new CDS Hooks hook.
 
 See https://cds-hooks.org/ for additional information, resources and ways to get involved.

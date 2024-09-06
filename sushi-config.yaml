@@ -24,7 +24,11 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
+dependencies:
+  hl7.other.uv.cds-hooks:
+    id: cdshooks
+    uri: https://build.fhir.org/ig/HL7/cds-hooks/
+    version: "current"
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -81,22 +85,6 @@ pages:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: https://build.fhir.org/ig/HL7/cds-hooks
-  Hook Library:
-    allergyintolerance-create (1): allergyintolerance-create.html
-    appointment-book (1): appointment-book.html
-    encounter-discharge (1): encounter-discharge.html
-    encounter-start (1): encounter-start.html
-    medication-refill (1): medication-refill.html
-    order-dispatch (0): order-dispatch.html
-    order-select (4) : order-select.html
-    order-sign (5): order-sign.html
-    patient-view (5): patient-view.html
-    problem-list-item-create (1): problem-list-item-create.html
-    medication-prescribe (deprecated): medication-prescribe.html
-    order-review (deprecated): order-review.html
-    template: template.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

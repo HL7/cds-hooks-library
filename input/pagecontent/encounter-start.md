@@ -1,6 +1,6 @@
 ### `encounter-start`
 
-!!! info "Looking for Feedback"
+<blockquote>
     **Hey implementers, we want to hear from you!**<br/>
     - What's the greatest opportunity for delivering remote CDS at the start of an encounter?<br/>
     - For which users should this hook fire?<br/>
@@ -8,12 +8,13 @@
     - How many and what types of encounters are there in a single hospitalization, a single ambulatory visit?<br/>
     - Is there value in an encounter start hook pairing with an (typically inpatient) encounter discharge hook?<br/> 
     - Please explain your encounter workflow.<br/>
+</blockquote>
 
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [1 - Submitted](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [1 - Submitted]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 #### Workflow
@@ -31,6 +32,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `PractitionerRole/123`
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the Patient the Encounter is for
 `encounterId` | REQUIRED | Yes | *string* | The FHIR `Encounter.id` of the Encounter being started
+{:.grid}
 
 #### Examples
 
@@ -47,3 +49,4 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+{:.grid}

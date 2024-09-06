@@ -1,10 +1,10 @@
-Test### `order-sign`
+### `order-sign`
 
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [5 - Mature](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [5 - Mature]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 #### Workflow
@@ -30,6 +30,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `draftOrders` | REQUIRED | No | *object* | A Bundle of FHIR request resources with a draft status, representing orders that aren't yet signed from the current ordering session. 
+{:.grid}
 
 #### A Note Concerning FHIR Versions
 
@@ -555,3 +556,4 @@ Version | Description
 1.0 | Initial Release
 1.0.1 | Add DeviceRequest to list of order resources for R4.
 1.1.0 | Updated hook to all for use in order-revision situations
+{:.grid}

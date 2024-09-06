@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 0.1.0 |
-| hookMaturity | [1 - Submitted](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [1 - Submitted]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 #### Workflow
@@ -20,7 +20,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `allergyIntolerance` | REQUIRED | No | *object* | R4/STU3/DSTU2 - FHIR AllergyIntolerance instance
-
+{:.grid}
 
 #### Example
 
@@ -151,3 +151,4 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 0.1.0 | Initial Release
+{:.grid}

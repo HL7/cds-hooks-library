@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [1 - Submitted](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [1 - Submitted]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 #### Workflow
@@ -20,6 +20,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `Practitioner/123`
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the being discharged
 `encounterId` | REQUIRED | Yes | *string* | The FHIR `Encounter.id` of the Encounter being ended
+{:.grid}
 
 #### Examples
 
@@ -36,3 +37,4 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+{:.grid}

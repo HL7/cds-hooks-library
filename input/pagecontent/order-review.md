@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [3 - Considered](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [3 - Considered]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 #### Deprecation Notice
@@ -25,6 +25,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of the current encounter in context
 `orders` | REQUIRED | No | *object* | DSTU2 - FHIR Bundle of MedicationOrder, DiagnosticOrder, DeviceUseRequest, ReferralRequest, ProcedureRequest, NutritionOrder, VisionPrescription with _draft_ status <br/> STU3 - FHIR Bundle of MedicationRequest, ReferralRequest, ProcedureRequest, NutritionOrder, VisionPrescription with _draft_ status
+{:.grid}
 
 #### Examples
 
@@ -359,3 +360,4 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+{:.grid}

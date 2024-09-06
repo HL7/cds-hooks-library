@@ -1,17 +1,19 @@
 # <mark>`hook-name-expressed-as-noun-verb`</mark>
 
-!!! info
+<blockquote>
     This page defines a workflow [hook](https://build.fhir.org/ig/HL7/cds-hooks/#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a <mark>**build | snapshot | ballot | release**</mark> at the level of <mark>**[Draft | Trial Use | Normative | Informative | Deprecated](http://hl7.org/fhir/versions.html#std-processs)**</mark>
+</blockquote>
 
 | Metadata | Value
 | ---- | ----
 | specificationVersion | 1.0
 | hookVersion | 1.0
 | hookMaturity | [0 - Draft](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model)
+{:.grid}
 
 ## Workflow
 
-<mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format](https://build.fhir.org/ig/HL7/cds-hooks/#hook-definition-format).</mark>
+<mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format]({{site.data.fhir.cdshooks}}#hook-definition-format).</mark>
 
 ## Context
 
@@ -21,6 +23,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
 <mark>`exampleId`</mark> | REQUIRED | Yes | *string* | <mark>Describe the context value</mark>
 <mark>`encounterId`</mark> | OPTIONAL | Yes | *string* | <mark>Describe the context value</mark>
+{:.grid}
 
 ### Examples
 
@@ -44,3 +47,4 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+{:.grid}

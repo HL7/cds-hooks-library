@@ -1,16 +1,20 @@
 ### `appointment-book`
-
-!!! info "Looking for Feedback"
-    **Hey implementers, we want to hear from you!**<br/>
-    - What obstacles are there to limiting this hook to firing only when the appointment is  confirmed or finalized as booked? <br/>
-    - For which users should this hook fire?<br/>
-    - Many appointments are scheduled directly into the EHR by the patient, without provider staff involvement ...
+<blockquote>
+  <p>
+    Hey implementers, we want to hear from you!
+    <ul>
+      <li>What obstacles are there to limiting this hook to firing only when the appointment is  confirmed or finalized as booked?</li>
+      <li>For which users should this hook fire?</li>
+      <li>Many appointments are scheduled directly into the EHR by the patient, without provider staff involvement ...</li>
+    </ul>
+  </p>
+</blockquote>
 
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [1 - Submitted](https://build.fhir.org/ig/HL7/cds-hooks/#hook-maturity-model) |
+| hookMaturity | [1 - Submitted]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 #### Workflow
 
@@ -246,3 +250,4 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+{:.grid}
