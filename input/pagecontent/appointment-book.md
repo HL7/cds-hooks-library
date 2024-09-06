@@ -1,7 +1,7 @@
 ### `appointment-book`
 <blockquote>
   <p>
-    Hey implementers, we want to hear from you!
+    <b>Hey implementers, we want to hear from you!</b>
     <ul>
       <li>What obstacles are there to limiting this hook to firing only when the appointment is  confirmed or finalized as booked?</li>
       <li>For which users should this hook fire?</li>

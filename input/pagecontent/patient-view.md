@@ -1,7 +1,7 @@
 ### `patient-view`
 
 <blockquote>
-    This page defines a workflow [hook]({{site.data.fhir.cdshooks}}#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a **build** at the level of **[Trial Use](http://hl7.org/fhir/versions.html#std-processs)**.
+    This page defines a workflow [hook]({{site.data.fhir.cdshooks}}#hooks) for the purpose of providing clinical decision support using CDS Hooks. This is a <b>build</b> at the level of <b>[Trial Use](http://hl7.org/fhir/versions.html#std-processs)<b>.
 </blockquote>
 
 | Metadata | Value |
