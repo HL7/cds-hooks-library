@@ -1,5 +1,5 @@
 ### `appointment-book`
-<blockquote style="background-color: #FFD580;">
+<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
   <p>
     <b>Looking for Feedback</b>
     Hey implementers, we want to hear from you!
