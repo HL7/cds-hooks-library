@@ -1,5 +1,7 @@
 ### `medication-refill`
 
+This page defines a workflow hook for the purpose of providing clinical decision support using CDS Hooks. This is a **snapshot** at the level of **Draft**.
+
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 2.0 |
