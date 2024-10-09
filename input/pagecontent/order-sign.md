@@ -1,5 +1,7 @@
 ### `order-sign`
 
+This page defines a workflow hook for the purpose of providing clinical decision support using CDS Hooks. This is a **release** at the level of **Trial Use**.
+
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
