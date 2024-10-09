@@ -1,4 +1,7 @@
 ### `appointment-book`
+
+This page defines a workflow hook for the purpose of providing clinical decision support using CDS Hooks. This is a **release** at the level of **Trial Use**.
+
 <blockquote style="background-color: rgba(255, 213, 128, 0.5);">
   <p>
     <b>Looking for Feedback:</b>
