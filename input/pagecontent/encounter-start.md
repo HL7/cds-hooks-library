@@ -1,7 +1,7 @@
 ### `encounter-start`
 
 <blockquote >
-    This page defines a workflow <a href="{{site.data.fhir.cdshooks}}#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a **release** at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
+    This page defines a workflow <a href="{{site.data.fhir.cdshooks}}#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
 </blockquote>
 
 <blockquote style="background-color: rgba(255, 213, 128, 0.5);">
