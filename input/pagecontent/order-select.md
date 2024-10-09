@@ -409,6 +409,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
 ##### Example (DSTU2)
 
 ```json
+{
 "context":{
   "userId":"Practitioner/example",
   "patientId":"1288992",
@@ -550,6 +551,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
       }
     ]
   }
+}
 }
 ```
 
