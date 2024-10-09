@@ -1,7 +1,7 @@
 # <mark>`hook-name-expressed-as-noun-verb`</mark>
 
 <blockquote>
-    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark>**build** | **snapshot** | **ballot** | **release**</mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Draft | Trial Use | Normative | Informative | Deprecated</b></a></mark>
+    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>build</b> | <b>snapshot</b> | <b>ballot</b> | <b>release</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Draft | Trial Use | Normative | Informative | Deprecated</b></a></mark>
 </blockquote>
 
 | Metadata | Value
