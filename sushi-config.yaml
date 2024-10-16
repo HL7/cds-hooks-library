@@ -3,13 +3,13 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.other.uv.cds.hooks.library
+id: hl7.fhir.uv.cds.hooks.library
 canonical: http://cds-hooks.hl7.org
 name: CDSHooksLibrary
 title: CDS Hooks Library
 description: "CDS Hooks describes a \"hook\"-based pattern for invoking decision support from within a clinician's workflow. The CDS Hook Library defines hooks standardized across the community."
 status: draft # draft | active | retired | unknown
-version: 2.0.0
+version: 2.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -25,10 +25,10 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.other.uv.cds-hooks:
+  hl7.fhir.uv.cds-hooks:
     id: cdshooks
     uri: https://build.fhir.org/ig/HL7/cds-hooks/
-    version: "current"
+    version: current
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
