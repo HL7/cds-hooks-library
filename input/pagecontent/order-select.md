@@ -1,12 +1,16 @@
 ### `order-select`
 
+{% capture maturity_link %}
+  {% include maturitylink.html %}
+{% endcapture %}
+{% assign maturity_link = maturity_link | strip_newlines %}
+
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [4 - Documented]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | <a href="{{ maturity_link }}">4 - Document</a> |
 {:.grid}
-
 #### Workflow
 
 The order-select hook occurs after the clinician selects the order and before signing.

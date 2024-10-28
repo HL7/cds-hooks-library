@@ -1,10 +1,15 @@
 ### `order-dispatch`
 
-| Metadata | Value
-| ---- | ----
-| specificationVersion | 2.0
-| hookVersion | 1.1
-| hookMaturity | [0 - Draft]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+{% capture maturity_link %}
+  {% include maturitylink.html %}
+{% endcapture %}
+{% assign maturity_link = maturity_link | strip_newlines %}
+
+| Metadata | Value |
+| ---- | ---- |
+| specificationVersion | 2.0 |
+| hookVersion | 1.1 |
+| hookMaturity | <a href="{{ maturity_link }}">0 - Draft</a> |
 {:.grid}
 
 #### Workflow

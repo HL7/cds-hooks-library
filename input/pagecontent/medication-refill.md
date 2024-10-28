@@ -1,10 +1,15 @@
 ### `medication-refill`
 
+{% capture maturity_link %}
+  {% include maturitylink.html %}
+{% endcapture %}
+{% assign maturity_link = maturity_link | strip_newlines %}
+
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 2.0 |
 | hookVersion | 0.1.0 |
-| hookMaturity | [1 - Submitted]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | <a href="{{ maturity_link }}">1 - Submitted</a> |
 {:.grid}
 
 #### Workflow
