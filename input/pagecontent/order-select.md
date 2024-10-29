@@ -1,5 +1,10 @@
 ### `order-select`
 
+{% capture maturity_link %}
+  {% include maturitylink.html %}
+{% endcapture %}
+{% assign maturity_link = maturity_link | strip_newlines %}
+
 <blockquote >
     This page defines a workflow <a href="{{site.data.fhir.cdshooks}}#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
 </blockquote>
@@ -8,9 +13,8 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [4 - Documented]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | <a href="{{ maturity_link }}">4 - Document</a> |
 {:.grid}
-
 #### Workflow
 
 The order-select hook occurs after the clinician selects the order and before signing.

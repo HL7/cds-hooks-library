@@ -1,0 +1,15 @@
+cds-hooks-contexts:
+  current:
+    url: https://cds-hooks.hl7.org/
+  build:
+    url: https://build.fhir.org/ig/HL7/cds-hooks-library/
+  stu2:
+    url: https://cds-hooks.hl7.org/2.0/
+  stu2-ballot:
+    url: https://cds-hooks.hl7.org/ballots/2020Sep/
+  stu1:
+    url: https://cds-hooks.hl7.org/1.0/
+  stu1-ballot:
+    url: https://cds-hooks.hl7.org/ballots/2018May/
+  relative:
+    url: ../cds-hooks/

@@ -3,3 +3,12 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# There are differences between the current URL of HL7 CDS Hooks and the future site of the specification. We rely on the use of liquid, html, and the releaseLabel of this specification to dynamically determine which of the URLs are appropriate.
+% cannot be resolved%
+
+# As this is an errata release, we are not creating substantive changes. 
+ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+
+# The CDS Work Group has not yet approved a publication request
+% no jira specification file defined %

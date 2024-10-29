@@ -29,3 +29,19 @@ See https://cds-hooks.org/ for additional information, resources and ways to get
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
 * [template hook](template.html)
+
+### Intellectual Property Statements
+
+CDS Hooks is the copyright of HL7 International and Boston Children's Hospital. The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0 International License. All source code for CDS Hooks is available at [https://github.com/cds-hooks](https://github.com/cds-hooks).
+
+<!-- IGs that don't define resources can hide these in a div tag, see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Orphaned.20xhtml.20fragments.3F/near/370612006 -->
+
+<div style="display:none">
+{% include ip-statements.xhtml %}
+
+{% include cross-version-analysis.xhtml %}
+
+{% include dependency-table.xhtml %}
+
+{% include globals-table.xhtml %}
+</div>
