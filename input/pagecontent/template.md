@@ -4,16 +4,11 @@
     This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>build</b> | <b>snapshot</b> | <b>ballot</b> | <b>release</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Draft | Trial Use | Normative | Informative | Deprecated</b></a></mark>
 </blockquote>
 
-{% capture maturity_link %}
-  {% include maturitylink.html %}
-{% endcapture %}
-{% assign maturity_link = maturity_link | strip_newlines %}
-
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 0.1.0 |
-| hookMaturity | <a href="{{ maturity_link }}">0 - Draft</a> |
+| hookMaturity | [0 - Draft]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 ## Workflow

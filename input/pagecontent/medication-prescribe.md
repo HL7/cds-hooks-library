@@ -1,15 +1,10 @@
 ### `medication-prescribe`
 
-{% capture maturity_link %}
-  {% include maturitylink.html %}
-{% endcapture %}
-{% assign maturity_link = maturity_link | strip_newlines %}
-
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | <a href="{{ maturity_link }}">2 - Tested</a> |
+| hookMaturity | [2 - Tested]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
 {:.grid}
 
 
