@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="cds" url="http://cds-hooks.hl7.org">
-<version code="current" url=""/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="version" defaultVersion="current" defaultWorkgroup="cds" url="http://cds-hooks.hl7.org/hooks">
+<version code="current" url="version"/>
+<version code="current" url="http://build.fhir.org/ig/HL7/cds-hooks-library"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
