@@ -15,7 +15,7 @@
         "version": "2.0.1",
         "date": "2024-10-30",
         "desc": "Errata publication that brings CDS Hooks and its library into a FHIR Implementation Guide format.",
-        "path": "http://cds-hooks.hl7.org/libary/2.0.1",
+        "path": "http://cds-hooks.hl7.org/hooks/2.0.1",
         "status": "update",
         "fhirversion": "4.0.1",
         "sequence": "STU 2"
