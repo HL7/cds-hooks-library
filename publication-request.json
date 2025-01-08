@@ -1,25 +1,16 @@
 {
     "package-id": "hl7.fhir.uv.cds-hooks-library",
-    "title": "CDS Hooks Library Implementation Guide",
+    "version": "2.0.1",
+    "path": "http://cds-hooks.hl7.org/library/STU2",
+    "mode": "technical-correction",
+    "status": "release",
+    "sequence": "STU2",
+    "desc": "STU2 Release - Technical Correction 1",
+    "changes": "changes.html",
+    "first": true,
+    "title": "CDS Hooks Hook Library",
+    "ci-build": "http://build.fhir.org/ig/HL7/cds-hooks-library",
     "canonical": "http://cds-hooks.hl7.org/hooks",
     "category": "Clinical Decision Support",
-    "list": [
-      {
-        "version": "current",
-        "desc": "Continuous Integration Build (latest in version control)",
-        "path": "http://build.fhir.org/ig/HL7/cds-hooks-library",
-        "status": "ci-build",
-        "current": true
-      },
-      {
-        "version": "2.0.1",
-        "date": "2024-10-30",
-        "desc": "Errata publication that brings CDS Hooks and its library into a FHIR Implementation Guide format.",
-        "path": "http://cds-hooks.hl7.org/hooks/2.0.1",
-        "status": "update",
-        "fhirversion": "4.0.1",
-        "sequence": "STU 2"
-      }
-    ]
-  }
-  
+    "introduction": "The CDS Hooks Hook Library contains hook specifications exposed by CDS Hooks Clients to invoke CDS Hooks Services."
+}
