@@ -6,7 +6,6 @@
     "status": "release",
     "sequence": "STU2",
     "desc": "STU2 Release - Technical Correction 1",
-    "changes": "changes.html",
     "first": true,
     "title": "CDS Hooks Hook Library",
     "ci-build": "http://build.fhir.org/ig/HL7/cds-hooks-library",
