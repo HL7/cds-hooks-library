@@ -3,7 +3,7 @@
     "version": "1.0.1",
     "path": "http://cds-hooks.hl7.org/hooks-STU1",
     "mode": "technical-correction",
-    "status": "release",
+    "status": "trial-use",
     "sequence": "STU1",
     "desc": "STU1 Release - Technical Correction 1",
     "first": true,
