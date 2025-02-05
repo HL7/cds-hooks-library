@@ -13,6 +13,9 @@
   <li>
     <a href="{{site.data.fhir.cdshooks}}">Home</a>
   </li>
+  <li>
+    <a href="index.md">Overview</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Hook Library
       <b class="caret"></b>
