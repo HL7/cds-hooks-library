@@ -19,7 +19,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="index.md">Overview</a>
+        <a href="index.html">Overview</a>
       </li>
       <li>
         <a href="allergyintolerance-create.html">allergyintolerance-create (1)</a>
