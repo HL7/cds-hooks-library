@@ -28,7 +28,6 @@ See https://cds-hooks.org/ for additional information, resources and ways to get
 * [problem-list-item-create](problem-list-item-create.html) (1)
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
-* [template hook](template.html)
 
 ### Intellectual Property Statements
 

@@ -48,7 +48,7 @@ dependencies:
 #
 pages:
   index.md:
-    title: Home
+    title: Overview
   allergyintolerance-create.md:
   appointment-book.md:
   encounter-discharge.md:
