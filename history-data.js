@@ -14,7 +14,7 @@ var pageJSON = '{
 				"current":true
 			},{
 				"version":"1.0.1",
-				"path":"https://cds-hooks.hl7.org/hooks-STU1",
+				"path":"https://cds-hooks.hl7.org/hooks/STU1",
 				"status":"trial-use",
 				"sequence":"STU1",
 				"fhirversion":"4.0.1",
