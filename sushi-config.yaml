@@ -27,7 +27,7 @@ publisher:
 dependencies:
   hl7.fhir.uv.cds-hooks:
     id: cdshooks
-    version: 2.0.1
+    version: latest          # the Library should always reference the most recent published version of the base spec
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
