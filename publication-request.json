@@ -10,5 +10,8 @@
     "title": "CDS Hooks Hook Library",
     "ci-build": "http://build.fhir.org/ig/HL7/cds-hooks-library",
     "category": "Clinical Decision Support",
+    "related" : {
+      "cdshooks" : "2.0.1"
+    },
     "introduction": "The CDS Hooks Hook Library contains hook specifications exposed by CDS Hooks Clients to invoke CDS Hooks Services."
 }
