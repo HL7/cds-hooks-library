@@ -1,14 +1,14 @@
 ### `order-dispatch`
 
 <blockquote >
-    This page defines a workflow <a href="{{site.data.fhir.cdshooks}}#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
+    This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
 </blockquote>
 
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 2.0 |
 | hookVersion | 1.1 |
-| hookMaturity | [0 - Draft]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | [0 - Draft]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
 #### Workflow

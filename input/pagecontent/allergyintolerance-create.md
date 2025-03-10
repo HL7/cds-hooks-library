@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 0.1.0 |
-| hookMaturity | [1 - Submitted]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | [1 - Submitted]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
 #### Workflow

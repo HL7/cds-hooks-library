@@ -8,12 +8,12 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 0.1.0 |
-| hookMaturity | [0 - Draft]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | [0 - Draft]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
 ## Workflow
 
-<mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format]({{site.data.fhir.cdshooks}}#hook-definition-format).</mark>
+<mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format]({{site.data.related.cdshooks.link}}/index.html#hook-definition-format).</mark>
 
 ## Context
 

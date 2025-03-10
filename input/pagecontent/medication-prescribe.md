@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 1.0 |
-| hookMaturity | [2 - Tested]({{site.data.fhir.cdshooks}}#hook-maturity-model) |
+| hookMaturity | [2 - Tested]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
 

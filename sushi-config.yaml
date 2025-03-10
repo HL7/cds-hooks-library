@@ -83,6 +83,12 @@ pages:
 # parameters:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
+
+parameters:
+  excludettl: true
+  shownav: true
+  related-ig: module:cdshooks=hl7.fhir.uv.cds-hooks
+
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
