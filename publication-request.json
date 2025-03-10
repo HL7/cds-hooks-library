@@ -2,7 +2,7 @@
     "package-id": "hl7.fhir.uv.cds-hooks-library",
     "version": "1.0.1",
     "path": "http://cds-hooks.hl7.org/hooks/STU1",
-    "mode": "technical-correction",
+    "mode": "milestone",
     "status": "trial-use",
     "sequence": "STU1",
     "desc": "STU1 Release - Technical Correction 1",
