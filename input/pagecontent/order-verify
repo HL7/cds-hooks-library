@@ -44,7 +44,7 @@ order | REQUIRED | No |	object | A Bundle of FHIR request resources with a draft
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Amoxicillin 120 MG/ML / clavulanate potassium 8.58 MG/ML Oral Suspension (rxnorm: 617993)</div>"
         },
-        "status": "draft",
+        "status": "active",
         "intent": "order",
         "medicationCodeableConcept": {
           "coding": [
