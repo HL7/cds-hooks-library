@@ -4,8 +4,8 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# Re: "Dependency on hl7.fhir.uv.cds-hooks is to the current version - not allowed". We're intentionally linking from the Library IG to the current CDS Hooks IG and vice-versa. This is the same behavior that base FHIR references the FHIR Extensions Pack (base R5 points to the most recent extensions IG version, not the IG version published at the time of time).
-% cannot be resolved%
+# We're intentionally linking from the Library IG to the current CDS Hooks IG and vice-versa. This is the same behavior that base FHIR references the FHIR Extensions Pack (base R5 points to the most recent extensions IG version, not the IG version published at the time of time).
+# % cannot be resolved%
 
 # There are currently no profiles defined in the CDS Hooks or CDS Hooks Library specifications
 ImplementationGuide.definition.resource: minimum required = 1, but only found 0%
