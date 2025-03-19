@@ -8,11 +8,11 @@ canonical: http://cds-hooks.hl7.org/hooks
 name: CDSHooksLibrary
 title: CDS Hooks Library
 description: "CDS Hooks describes a \"hook\"-based pattern for invoking decision support from within a clinician's workflow. The CDS Hooks Hook Library defines hooks standardized across the community."
-status: active # draft | active | retired | unknown
-version: 1.0.1
+status: draft # draft | active | retired | unknown
+version: 2.0.0-cibuild
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
-releaseLabel: STU1 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 publisher:
