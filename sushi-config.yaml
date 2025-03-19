@@ -32,7 +32,7 @@ extension:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-dependencies:
+# dependencies:
 #  hl7.fhir.uv.cds-hooks:
 #    id: cdshooks
 #    version: latest          # the Library should always reference the most recent published version of the base spec
