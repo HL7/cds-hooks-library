@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="http://build.fhir.org/ig/HL7/cds-hooks-library" defaultVersion="1.0.1" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks-library" url="http://cds-hooks.hl7.org/hooks">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="https://cds-hooks.hl7.org/ballots/2023Sep/" ciUrl="http://build.fhir.org/ig/HL7/cds-hooks-library" defaultVersion="1.0.1" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks-library" url="http://cds-hooks.hl7.org/hooks">
 <version code="current" url="http://build.fhir.org/ig/HL7/cds-hooks-library"/>
 <version code="1.0.1" url="http://cds-hooks.hl7.org/hooks/STU1"/>
+<version code="1.0.1-ballot" url="https://cds-hooks.hl7.org/ballots/2023Sep/"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/HookCodes" key="CodeSystem-HookCodes" name="CDS Hook Codes"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="allergyintolerance-create" name="Allergyintolerance Create"/>
