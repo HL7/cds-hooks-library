@@ -1,4 +1,4 @@
-# <mark>`order-verify`</mark>
+# <mark>`medication-verify`</mark>
 
 <blockquote>
     This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>build</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a></mark>
@@ -13,7 +13,7 @@
 
 ## Workflow
 
-The order-verify hook fires after a clinician has already signed an order to support additional review or approval steps that may be part of workflow, (including orders for medications, procedures, labs and other orders). This hook is applies to signed orders that are no longer in draft status. The context contains all order details, such as dose, quantity, route, etc. Use this hook when your service needs to present in order context.
+The order-verify hook fires when a pharmacist is ready to verify a medication order for a patient in either ambulatory or inpatient settings. This hook applies to already signed orders that are in an active status. Use this hook when your service needs to present in order context to a pharmacist. Pharmacist workflow varies geographically, such that this hook will not be relevant in some locales.
 
 ## Context
 
@@ -22,7 +22,7 @@ Field | Optionality | Prefetch Token | Type | Description
 userId | REQUIRED | Yes | *string* | The id of the current user. *For this hook, the user is expected to be of type Practitioner or PractitionerRole. For example, PractitionerRole/123 or Practitioner/abc.*
 patientId | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient in context
 encounterId | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter in context
-order | REQUIRED | No | object | A FHIR request resource with active status, representing a single signed order.
+medication | REQUIRED | No | object | A FHIR MedicationRequest resource (MedicationOrder in DSTU2) with active status, representing a single signed order which is about to be verified by a pharmacist.
 {:.grid}
 
 ### Examples
