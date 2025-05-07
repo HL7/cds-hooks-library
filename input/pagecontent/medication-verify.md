@@ -13,7 +13,7 @@
 
 ## Workflow
 
-The order-verify hook fires when a pharmacist is ready to verify a medication order for a patient in either ambulatory or inpatient settings. This hook applies to already signed orders that are in an active status. Use this hook when your service needs to present in order context to a pharmacist. Pharmacist workflow varies geographically, such that this hook will not be relevant in some locales.
+The medication-verify hook fires when a pharmacist is ready to verify a medication order for a patient in either ambulatory or inpatient settings. This hook applies to already signed orders that are in an active status. Use this hook when your service needs to present in order context to a pharmacist. Pharmacist workflow varies geographically, such that this hook will not be relevant in some locales.
 
 ## Context
 
