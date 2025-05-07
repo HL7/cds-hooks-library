@@ -1,7 +1,7 @@
-# <mark>`medication-verify`</mark>
+# `medication-verify`
 
 <blockquote>
-    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>build</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a></mark>
+    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>build</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a>.
 </blockquote>
 
 | Metadata | Value |
