@@ -64,6 +64,7 @@ pages:
   encounter-start.md:
   medication-prescribe.md:
   medication-refill.md:
+  medication-verify.md:
   order-dispatch.md:
   order-review.md:
   order-select.md:
