@@ -1,7 +1,7 @@
 # <mark>`order-verify`</mark>
 
 <blockquote>
-    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>release</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a></mark>
+    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>build</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a></mark>
 </blockquote>
 
 | Metadata | Value |
@@ -22,7 +22,7 @@ Field | Optionality | Prefetch Token | Type | Description
 userId | REQUIRED | Yes | *string* | The id of the current user. *For this hook, the user is expected to be of type Practitioner or PractitionerRole. For example, PractitionerRole/123 or Practitioner/abc.*
 patientId | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patient in context
 encounterId | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter in context
-order | REQUIRED | No | object | A FHIR request resource with active status, representing one order that is signed.
+order | REQUIRED | No | object | A FHIR request resource with active status, representing a single signed order.
 {:.grid}
 
 ### Examples
