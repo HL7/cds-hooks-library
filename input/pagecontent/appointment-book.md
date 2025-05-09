@@ -43,211 +43,223 @@ Field | Optionality | Prefetch Token | Type | Description
 ##### Examples (STU3)
 
 ```json
-"context":{
+"context": {
   "userId" : "PractitionerRole/A2340113",
   "patientId" : "1288992",
-  "appointments" : [
-    {
-      "resourceType": "Appointment",
-      "id": "apt1",
-      "status": "proposed",
-      "serviceType": [
-        {
-          "coding": [
-            {
-              "code": "183",
-              "display": "Sleep Medicine"
-            }
-          ]
-        }
-      ],
-      "appointmentType": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/v2/0276",
-            "code": "FOLLOWUP",
-            "display": "A follow up visit from a previous appointment"
-          }
-        ]
-      },
-      "reason": {
-        "coding": {
-          "system": "",
-          "code": "1023001",
-          "display": "Apnea"
-        }
-      },
-      "description": "CPAP adjustments",
-      "start": "2019-08-10T09:00:00-06:00",
-      "end": "2019-08-10T09:10:00:00-06:00",
-      "created": "2019-08-01",
-      "participant": [
-        {
-          "actor": {
-            "reference": "Patient/example",
-            "display": "Peter James Chalmers"
-          },
-          "required": "required",
-          "status": "tentative"
-        },
-        {
-          "actor": {
-            "reference": "Practitioner/example",
-            "display": "Dr Adam Careful"
-          },
-          "required": "required",
-          "status": "accepted"
-        }
-      ]
-    },
-    {
-      "resourceType": "Appointment",
-      "id": "apt1",
-      "status": "proposed",
-      "appointmentType": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/v2/0276",
-            "code": "CHECKUP",
-            "display": "A routine check-up, such as an annual physical"
-          }
-        ]
-      },
-      "description": "Regular physical",
-      "start": "2020-08-01T13:00:00-06:00",
-      "end": "2020-08-01T13:30:00:00-06:00",
-      "created": "2019-08-01",
-      "participant": [
-        {
-          "actor": {
-            "reference": "Patient/example",
-            "display": "Peter James Chalmers"
-          },
-          "required": "required",
-          "status": "tentative"
-        },
-        {
-          "actor": {
-            "reference": "Practitioner/example",
-            "display": "Dr Adam Careful"
-          },
-          "required": "required",
-          "status": "accepted"
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json 
-"context":{
-  "userId" : "PractitionerRole/A2340113",
-  "patientId" : "1288992",
-  "encounterId" : "456",
-  "appointments" : [
-    {
-      "resourceType": "Appointment",
-      "id": "example",
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brian MRI results discussion</div>"
-      },
-      "status": "proposed",
-      "serviceCategory": {
-        "coding": [
-          {
-            "system": "http://example.org/service-category",
-            "code": "gp",
-            "display": "General Practice"
-          }
-        ]
-      },
-      "serviceType": [
-        {
-          "coding": [
-            {
-              "code": "52",
-              "display": "General Discussion"
-            }
-          ]
-        }
-      ],
-      "specialty": [
-        {
-          "coding": [
-            {
-              "system": "http://example.org/specialty",
-              "code": "gp",
-              "display": "General Practice"
-            }
-          ]
-        }
-      ],
-      "appointmentType": {
-        "coding": [
-          {
-            "system": "http://example.org/appointment-type",
-            "code": "follow",
-            "display": "Followup"
-          }
-        ]
-      },
-      "indication": [
-        {
-          "reference": "Condition/example",
-          "display": "Severe burn of left ear"
-        }
-      ],
-      "priority": 5,
-      "description": "Discussion on the results of your recent MRI",
-      "start": "2013-12-10T09:00:00Z",
-      "end": "2013-12-10T11:00:00Z",
-      "created": "2013-10-10",
-      "comment": "Further expand on the results of the MRI and determine the next actions that may be appropriate.",
-      "incomingReferral": [
-        {
-          "reference": "ReferralRequest/example"
-        }
-      ],
-      "participant": [
-        {
-          "actor": {
-            "reference": "Patient/example",
-            "display": "Peter James Chalmers"
-          },
-          "required": "required",
-          "status": "tentative"
-        },
-        {
-          "type": [
+  "appointments" : {
+    "resourceType": "Bundle",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "apt1",
+          "status": "proposed",
+          "serviceType": [
             {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/v3/ParticipationType",
-                  "code": "ATND"
+                  "code": "183",
+                  "display": "Sleep Medicine"
                 }
               ]
             }
           ],
-          "actor": {
-            "reference": "Practitioner/example",
-            "display": "Dr Adam Careful"
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0276",
+                "code": "FOLLOWUP",
+                "display": "A follow up visit from a previous appointment"
+              }
+            ]
           },
-          "required": "required",
-          "status": "accepted"
-        },
-        {
-          "actor": {
-            "reference": "Location/1",
-            "display": "South Wing, second floor"
+          "reason": {
+            "coding": {
+              "system": "",
+              "code": "1023001",
+              "display": "Apnea"
+            }
           },
-          "required": "required",
-          "status": "action-needed"
+          "description": "CPAP adjustments",
+          "start": "2019-08-10T09:00:00-06:00",
+          "end": "2019-08-10T09:10:00:00-06:00",
+          "created": "2019-08-01",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/example",
+                "display": "Peter James Chalmers"
+              },
+              "required": "required",
+              "status": "tentative"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/example",
+                "display": "Dr Adam Careful"
+              },
+              "required": "required",
+              "status": "accepted"
+            }
+          ]
         }
-      ]
-    }
-  ]
+      },
+      {
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "apt1",
+          "status": "proposed",
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v2/0276",
+                "code": "CHECKUP",
+                "display": "A routine check-up, such as an annual physical"
+              }
+            ]
+          },
+          "description": "Regular physical",
+          "start": "2020-08-01T13:00:00-06:00",
+          "end": "2020-08-01T13:30:00:00-06:00",
+          "created": "2019-08-01",
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/example",
+                "display": "Peter James Chalmers"
+              },
+              "required": "required",
+              "status": "tentative"
+            },
+            {
+              "actor": {
+                "reference": "Practitioner/example",
+                "display": "Dr Adam Careful"
+              },
+              "required": "required",
+              "status": "accepted"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
+```json 
+"context": {
+  "userId" : "PractitionerRole/A2340113",
+  "patientId" : "1288992",
+  "encounterId" : "456",
+  "appointments" : {
+    "resourceType": "Bundle",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Appointment",
+          "id": "example",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brian MRI results discussion</div>"
+          },
+          "status": "proposed",
+          "serviceCategory": {
+            "coding": [
+              {
+                "system": "http://example.org/service-category",
+                "code": "gp",
+                "display": "General Practice"
+              }
+            ]
+          },
+          "serviceType": [
+            {
+              "coding": [
+                {
+                  "code": "52",
+                  "display": "General Discussion"
+                }
+              ]
+            }
+          ],
+          "specialty": [
+            {
+              "coding": [
+                {
+                  "system": "http://example.org/specialty",
+                  "code": "gp",
+                  "display": "General Practice"
+                }
+              ]
+            }
+          ],
+          "appointmentType": {
+            "coding": [
+              {
+                "system": "http://example.org/appointment-type",
+                "code": "follow",
+                "display": "Followup"
+              }
+            ]
+          },
+          "indication": [
+            {
+              "reference": "Condition/example",
+              "display": "Severe burn of left ear"
+            }
+          ],
+          "priority": 5,
+          "description": "Discussion on the results of your recent MRI",
+          "start": "2013-12-10T09:00:00Z",
+          "end": "2013-12-10T11:00:00Z",
+          "created": "2013-10-10",
+          "comment": "Further expand on the results of the MRI and determine the next actions that may be appropriate.",
+          "incomingReferral": [
+            {
+              "reference": "ReferralRequest/example"
+            }
+          ],
+          "participant": [
+            {
+              "actor": {
+                "reference": "Patient/example",
+                "display": "Peter James Chalmers"
+              },
+              "required": "required",
+              "status": "tentative"
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/v3/ParticipationType",
+                      "code": "ATND"
+                    }
+                  ]
+                }
+              ],
+              "actor": {
+                "reference": "Practitioner/example",
+                "display": "Dr Adam Careful"
+              },
+              "required": "required",
+              "status": "accepted"
+            },
+            {
+              "actor": {
+                "reference": "Location/1",
+                "display": "South Wing, second floor"
+              },
+              "required": "required",
+              "status": "action-needed"
+            }
+          ]
+        }
+      }
+    ]
+  }
 }
 ```
 
