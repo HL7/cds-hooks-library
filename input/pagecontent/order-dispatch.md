@@ -26,7 +26,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `dispatchedOrders` | REQUIRED | Yes | *array* |  Collection of the FHIR local references for the Request resource(s) for which fulfillment is sought  E.g. `ServiceRequest/123`
 `performer` | REQUIRED | Yes | *string* |  The FHIR local reference for the Practitioner, PractitionerRole, Organization, CareTeam, etc. who is being asked to execute the order.  E.g. `Practitioner/456`
-`fulfillmentTasks` | OPTIONAL | No | *array* | DSTU2/STU3/R4/R5 - Collection of the Task instances (as objects) that provides a full description of the fulfillment request - including the timing and any constraints on fulfillment.  If Tasks are provided, each will be for a separate order and SHALL reference one of the dispatched-orders.
+`fulfillmentTasks` | OPTIONAL | No | *array* | DSTU2/STU3/R4/R5 - Collection of the Task instances (as objects) that provides a full description of the fulfillment request - including the timing and any constraints on fulfillment.  If Tasks are provided, each will be for a separate order and SHALL reference one of the dispatchedOrders. 
 {:.grid}
 
 #### Examples
@@ -35,7 +35,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ```json
 "context":{
   "patientId" : "1288992",
-  "dispatched-orders" : ["ServiceRequest/proc002"],
+  "dispatchedOrders" : ["ServiceRequest/proc002"],
   "performer" : "Organization/some-performer",
   "fulfillment-tasks" : [{
     "resourceType" : "Task",
