@@ -1,19 +1,19 @@
-# <mark>`medication-verify`</mark>
+# `medication-verify`
 
 <blockquote>
-    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <mark><b>build</b></mark> at the level of <mark><a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a></mark>
+    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>build</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a>.
 </blockquote>
 
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | 0.1.0 |
-| hookMaturity | [0 - Draft]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
+| hookMaturity | [1 - Submitted]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
 ## Workflow
 
-The order-verify hook fires when a pharmacist is ready to verify a medication order for a patient in either ambulatory or inpatient settings. This hook applies to already signed orders that are in an active status. Use this hook when your service needs to present in order context to a pharmacist. Pharmacist workflow varies geographically, such that this hook will not be relevant in some locales.
+The medication-verify hook fires when a pharmacist is ready to verify a medication order for a patient in either ambulatory or inpatient settings. This hook applies to already signed orders that are in an active status. Use this hook when your service needs to present in order context to a pharmacist. Pharmacist workflow varies geographically, such that this hook will not be relevant in some locales.
 
 ## Context
 
