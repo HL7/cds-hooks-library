@@ -32,6 +32,9 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
 
+### Code system
+Implementers who need to refer to CDS Hooks using HL7's binding machinery (e.g. in CapabilityStatements) may make use of the codes defined in the CodeSystem found [here](CodeSystem-HookCodes.html).
+
 ### Intellectual Property Statements
 
 CDS Hooks is the copyright of HL7 International and Boston Children's Hospital. The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0 International License. All source code for CDS Hooks is available at [https://github.com/cds-hooks](https://github.com/cds-hooks).
