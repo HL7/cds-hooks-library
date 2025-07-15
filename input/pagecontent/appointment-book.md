@@ -46,7 +46,7 @@ Field | Optionality | Prefetch Token | Type | Description
 "context": {
   "userId" : "PractitionerRole/A2340113",
   "patientId" : "1288992",
-  "appointments" : {
+  "appointments" : { 
     "resourceType": "Bundle",
     "entry": [
       {
