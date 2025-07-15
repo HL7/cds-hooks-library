@@ -4,6 +4,16 @@
     This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>build</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a>.
 </blockquote>
 
+<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
+  <p>
+    <b>Looking for Feedback:</b>
+    Hey implementers, we want to hear from you!
+    <ul>
+      <li>Have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
+    </ul>
+  </p>
+</blockquote>
+
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
