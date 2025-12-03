@@ -57,6 +57,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
       "encounterId":"89284",
       "draftOrders":{
          "resourceType":"Bundle",
+         "type": "collection",
          "entry":[
             {
                "resource":{
@@ -237,6 +238,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
       "encounterId":"89284",
       "draftOrders":{
          "resourceType":"Bundle",
+         "type": "collection",
          "entry":[
             {
                "resource":{
@@ -418,6 +420,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
   "encounterId":"89284",
   "draftOrders":{
     "resourceType":"Bundle",
+    "type": "collection",
     "entry":[
       {
         "resource":{
