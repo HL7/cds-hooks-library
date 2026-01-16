@@ -6,6 +6,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/HookCodes" key="CodeSystem-HookCodes" name="CDS Hook Codes"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="allergyintolerance-create" name="Allergyintolerance Create"/>
