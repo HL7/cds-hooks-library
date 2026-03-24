@@ -36,7 +36,7 @@ extension:
 dependencies:
   hl7.fhir.uv.cds-hooks:
     id: cdshooks
-    version: latest          # the Library should always reference the most recent published version of the base spec
+    version: dev          # the Library should always reference the most recent published version of the base spec
   hl7.fhir.uv.tools.r4:
     version: 1.1.0
     uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
