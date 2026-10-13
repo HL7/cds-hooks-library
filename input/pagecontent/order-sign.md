@@ -13,7 +13,7 @@
 
 #### Workflow
 
-The `order-sign` hook fires when a clinician is ready to sign one or more orders for a patient, (including orders for medications, procedures, labs and other orders).
+The `order-sign` hook fires when a clinician is ready to sign one or more orders for a patient (including orders for medications, procedures, labs and other orders).
 This hook is among the last workflow events before an order is promoted out of a draft status. 
 The context contains all order details, such as dose, quantity, route, etc, 
 although the order has not yet been signed and therefore still exists in a draft status. 
@@ -40,7 +40,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### A Note Concerning FHIR Versions
 
-CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the mosty commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
+CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the most commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
 * DSTU2 - FHIR Bundle of MedicationOrder, ProcedureRequest
 * STU3 - FHIR Bundle of MedicationRequest, ProcedureRequest
 * R4 - FHIR Bundle of MedicationRequest, ServiceRequest
@@ -564,5 +564,5 @@ Version | Description
 ---- | ----
 1.0 | Initial Release
 1.0.1 | Add DeviceRequest to list of order resources for R4.
-1.1.0 | Updated hook to all for use in order-revision situations
+1.1.0 | Updated hook to allow for use in order-revision situations
 {:.grid}

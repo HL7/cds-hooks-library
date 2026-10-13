@@ -9,8 +9,8 @@
 
 #### Workflow
 
-The `allergyintolerance-create` hook fires when when a clinician adds a new allergy or intolerance to a patient's list of allergies. 
-This hook fires during the act of finalizing the entry of a new allergy, such that the decision support returned from the CDS Service can guide the clinician to cancel the addition of the allergy. The context of the hook include the AllergyIntolerance resource that's about to be added to the patient's list of allergies. 
+The `allergyintolerance-create` hook fires when a clinician adds a new allergy or intolerance to a patient's list of allergies. 
+This hook fires during the act of finalizing the entry of a new allergy, such that the decision support returned from the CDS Service can guide the clinician to cancel the addition of the allergy. The context of the hook includes the AllergyIntolerance resource that's about to be added to the patient's list of allergies. 
 
 #### Context
 

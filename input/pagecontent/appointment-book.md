@@ -9,7 +9,7 @@
     <b>Looking for Feedback:</b>
     Hey implementers, we want to hear from you!
     <ul>
-      <li>What obstacles are there to limiting this hook to firing only when the appointment is  confirmed or finalized as booked?</li>
+      <li>What obstacles are there to limiting this hook to firing only when the appointment is confirmed or finalized as booked?</li>
       <li>For which users should this hook fire?</li>
       <li>Many appointments are scheduled directly into the EHR by the patient, without provider staff involvement ...</li>
       <li>Lastly, have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
@@ -162,7 +162,7 @@ Field | Optionality | Prefetch Token | Type | Description
           "id": "example",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brian MRI results discussion</div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brain MRI results discussion</div>"
           },
           "status": "proposed",
           "serviceCategory": {

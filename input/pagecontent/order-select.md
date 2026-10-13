@@ -38,7 +38,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### A Note Concerning FHIR Versions
 
-CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the mosty commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
+CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the most commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
 * DSTU2 - FHIR Bundle of MedicationOrder, ProcedureRequest
 * STU3 - FHIR Bundle of MedicationRequest, ProcedureRequest
 * R4 - FHIR Bundle of MedicationRequest, ServiceRequest

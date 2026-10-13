@@ -33,7 +33,7 @@ The patient who is being discharged and the encounter being ended.
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
 `userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `Practitioner/123`
-`patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the being discharged
+`patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the Patient being discharged
 `encounterId` | REQUIRED | Yes | *string* | The FHIR `Encounter.id` of the Encounter being ended
 {:.grid}
 
