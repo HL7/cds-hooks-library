@@ -20,7 +20,7 @@ This hook occurs when a clinician initially selects one or more new orders from 
 
 This hook is intended to replace (deprecate) the medication-prescribe hook.
 
-![Ordering Flow Diagram](orderingflow.png)
+![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
 
 #### Context
 
