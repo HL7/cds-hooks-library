@@ -13,6 +13,7 @@
     <li>When in a hospitalization workflow, an ambulatory workflow, does an encounter start?</li>
     <li>How many and what types of encounters are there in a single hospitalization, a single ambulatory visit?</li>
     <li>Is there value in an encounter start hook pairing with an (typically inpatient) encounter discharge hook?</li>
+    <li>Would a grouping-level identifier such as episodeCareId be a useful piece of context to include for this hook?</li>>
     <li>Please explain your encounter workflow.</li>
     <li>Have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
   </ul>
