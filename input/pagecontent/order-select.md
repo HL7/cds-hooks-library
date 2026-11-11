@@ -1,9 +1,5 @@
 ### `order-select`
 
-<blockquote >
-    This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
-</blockquote>
-
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
@@ -38,7 +34,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### A Note Concerning FHIR Versions
 
-CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the mosty commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
+CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the most commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
 * DSTU2 - FHIR Bundle of MedicationOrder, ProcedureRequest
 * STU3 - FHIR Bundle of MedicationRequest, ProcedureRequest
 * R4 - FHIR Bundle of MedicationRequest, ServiceRequest
