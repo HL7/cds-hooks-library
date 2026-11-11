@@ -8,6 +8,9 @@ Description: "A code system defining codes for all 'standard' hooks"
 * ^property[0].code = #status
 * ^property[0].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[0].type = #code
+* ^property[1].code = #maturity-level
+* ^property[1].description = "Hook maturity level per the CDS Hooks Maturity Model"
+* ^property[1].type = #integer
 * #allergyintolerance-create "AllergyIntolerance create" "Invoked when when a clinician adds a new allergy or intolerance to a patient's list of allergies"
 * #appointment-book          "Appointment book"          "Invoked when the user is scheduling one or more future encounters/visits for the patient"
 * #encounter-discharge       "Encounter discharge"       "Invoked when the user is performing the discharge process for an encounter where the notion of 'discharge' is relevant - typically an inpatient encounter"
