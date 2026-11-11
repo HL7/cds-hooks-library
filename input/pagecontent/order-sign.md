@@ -3,7 +3,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
-| hookVersion | 1.0 |
+| hookVersion | 1.1.0 |
 | hookMaturity | [5 - Mature]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
@@ -31,7 +31,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `PractitionerRole/123` or `Practitioner/abc`.
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
-`draftOrders` | REQUIRED | No | *object* | A Bundle of FHIR request resources with a draft status, representing orders that aren't yet signed from the current ordering session. 
+`draftOrders` | REQUIRED | No | *object* | A Bundle of FHIR request resources representing orders that either aren't yet signed (i.e. in draft status) from the current ordering session, or less commonly are being re-signed due to updates that are allowed on signed orders (such as changing dates). 
 {:.grid}
 
 #### A Note Concerning FHIR Versions
