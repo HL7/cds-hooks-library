@@ -8,11 +8,11 @@ canonical: http://cds-hooks.hl7.org/hooks
 name: CDSHooksLibrary
 title: CDS Hooks Library
 description: "CDS Hooks describes a \"hook\"-based pattern for invoking decision support from within a clinician's workflow. The CDS Hooks Hook Library defines hooks standardized across the community."
-status: draft # draft | active | retired | unknown
-version: 2.0.0-cibuild
+status: active # draft | active | retired | unknown
+version: 2.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2019+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: STU 2 Ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 publisher:
@@ -38,10 +38,10 @@ dependencies:
   hl7.fhir.uv.cds-hooks:
     id: cdshooks
     version: latest
-  hl7.fhir.uv.tools.r4:
-    version: 1.1.0
-    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
-    id: tools
+#  hl7.fhir.uv.tools.r4:
+#    version: 1.1.0
+#    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
+#    id: tools
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
