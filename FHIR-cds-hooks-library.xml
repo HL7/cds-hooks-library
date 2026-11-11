@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="https://cds-hooks.hl7.org/ballots/2023Sep/" ciUrl="http://build.fhir.org/ig/HL7/cds-hooks-library" defaultVersion="1.0.1" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks-library" url="http://cds-hooks.hl7.org/hooks">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://cds-hooks.hl7.org/hooks/2.0.0-202701-ballot" ciUrl="http://build.fhir.org/ig/HL7/cds-hooks-library" defaultVersion="1.0.1" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cds-hooks-library" url="http://cds-hooks.hl7.org/hooks">
 <version code="current" url="http://build.fhir.org/ig/HL7/cds-hooks-library"/>
+<version code="2.0.0-ballot" url="http://cds-hooks.hl7.org/hooks/2.0.0-202701-ballot"/>
 <version code="1.0.1" url="http://cds-hooks.hl7.org/hooks/STU1"/>
-<version code="1.0.1-ballot" url="https://cds-hooks.hl7.org/ballots/2023Sep/"/>
+<version code="1.0.1-ballot" deprecated="true" url="https://cds-hooks.hl7.org/ballots/2023Sep/"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
@@ -19,6 +20,7 @@
 <page key="allergyintolerance-create" name="Allergyintolerance Create"/>
 <page key="appointment-book" name="Appointment Book"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="changes" name="Changes"/>
 <page key="encounter-discharge" name="Encounter Discharge"/>
 <page key="encounter-start" name="Encounter Start"/>
 <page key="medication-prescribe" name="Medication Prescribe"/>
