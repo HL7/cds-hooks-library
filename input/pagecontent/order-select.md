@@ -18,6 +18,8 @@ This hook occurs when a clinician initially selects one or more new orders from 
 
 `order-select` is among the first workflow events for an order entering a draft status. The context of this hook may include defaulted order details upon the clinician selecting the order from the order catalogue of the CPOE, or upon her manual selection of order details (e.g. dose, quantity, route, etc). CDS services should expect some of the order information to not yet be specified. Additionally, the context may include previously selected orders that are not yet signed from the same ordering session. 
 
+Order entry is a focused clinical workflow, and interrupting it adds to clinician burden and alert fatigue. This hook fires when an order is initially selected, not each time the clinician changes a detail of that order. Even so, CDS Services should only return cards from this hook when the guidance is actionable at the point of selection, and should set the card [`indicator`]({{site.data.related.cdshooks.link}}/index.html#card-attributes) to reflect its actual urgency. Guidance that depends on order details that are typically completed later in the ordering session may be better suited to the [order-sign](order-sign.html) hook.
+
 This hook is intended to replace (deprecate) the medication-prescribe hook.
 
 ![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
