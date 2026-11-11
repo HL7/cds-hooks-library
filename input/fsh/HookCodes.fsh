@@ -19,6 +19,7 @@ Description: "A code system defining codes for all 'standard' hooks"
   * ^property.code = #status
   * ^property.valueCode = #deprecated
 * #medication-refill         "Medication refill"         "Invoked when a medication refill request for an existing prescription of a specific medication is received"
+* #medication-verify         "Medication verify"         "Invoked when a pharmacist is ready to verify a medication order for a patient"
 * #order-dispatch            "Order dispatch"            "Invoked when a practitioner is selecting a candidate performer for a pre-existing order or (set of orders) that was not assigned to a specific performer"
 * #order-review              "Order review"              "Deprecated in favor of the order-sign hook"
   * ^property.code = #status
