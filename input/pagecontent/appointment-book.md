@@ -21,10 +21,15 @@
 #### Workflow
 
 This hook is invoked when the user is scheduling one or more future encounters/visits for the patient.  For example, the `appointment-book` hook may be triggered for an appointment with the appointment creator, a clinician within the same organization as the appointment creator or even for an appointment outside the creator's organization.  It may be invoked at the start and end of the booking process and/or any time between those two points.  This hook enables CDS Services to aid in the decision of when future appointments should be scheduled, where they should be scheduled, what services should be booked, to identify actions that need to occur prior to scheduled appointments, etc.  
+{:.modified-content}
+
+<div class="new-content" markdown="1">
 
 ![Encounter Workflow Diagram](encounterflow.svg){:style="max-width:100%; height:auto;"}
 
 We are seeking implementer feedback on this workflow; see [Workflow Feedback](index.html#workflow-feedback).
+
+</div>
 
 #### Context
 
@@ -32,7 +37,7 @@ The Patient whose appointment(s) are being booked, as well as the proposed Appoi
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user could be of type Practitioner, PractitionerRole, Patient, or RelatedPerson.<br />For example, `PractitionerRole/123`. Patient or RelatedPerson are appropriate when a patient or their proxy are booking the appointment. 
+`userId` | REQUIRED | Yes | *string* | <span class="modified-content">The id of the current user.<br />For this hook, the user could be of type Practitioner, PractitionerRole, Patient, or RelatedPerson.<br />For example, `PractitionerRole/123`. Patient or RelatedPerson are appropriate when a patient or their proxy are booking the appointment.</span>
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of Patient appointment(s) is/are for
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of Encounter where booking was initiated
 `appointments` | REQUIRED | No | *object* | DSTU2/STU3/R4 - FHIR Bundle of Appointments in 'proposed' state
@@ -43,6 +48,8 @@ Field | Optionality | Prefetch Token | Type | Description
 #### Examples
 
 ##### Examples (STU3)
+
+<div class="modified-content" markdown="1">
 
 ```json
 "context": {
@@ -264,6 +271,7 @@ Field | Optionality | Prefetch Token | Type | Description
   }
 }
 ```
+</div>
 
 #### Change Log
 

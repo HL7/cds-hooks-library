@@ -1,8 +1,6 @@
 # `medication-verify`
 
-<blockquote>
-    This page defines a workflow <a href="https://build.fhir.org/ig/HL7/cds-hooks/#hooks"><b>hook</b></a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>build</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs"><b>Trial Use</b></a>.
-</blockquote>
+<div class="new-content" markdown="1">
 
 | Metadata | Value |
 | ---- | ---- |
@@ -24,6 +22,8 @@ patientId | REQUIRED | Yes | *string* | The FHIR Patient.id of the current patie
 encounterId | OPTIONAL | Yes | *string* | The FHIR Encounter.id of the current encounter in context
 medication | REQUIRED | No | object | A FHIR MedicationRequest resource (MedicationOrder in DSTU2) with active status, representing a single signed order which is about to be verified by a pharmacist.
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 ### Examples
 #### Example (R4)
@@ -250,3 +250,5 @@ Version | Description
 ---- | ----
 1.0 | Initial Release
 {:.grid}
+
+</div>

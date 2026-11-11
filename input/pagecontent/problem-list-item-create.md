@@ -21,7 +21,7 @@ The context of the hook includes these new conditions. Note that this hook occur
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, PractitionerRole/123 or Practitioner/abc.
+`userId` | REQUIRED | Yes | *string* | <span class="modified-content">The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, PractitionerRole/123 or Practitioner/abc.</span>
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `conditions` | REQUIRED | No | *object* | DSTU2 - FHIR Bundle of Conditions where `category` is `problem-list-item`<br/> STU3 - FHIR Bundle of Conditions where `category` is `problem-list-item`<br/> R4 - FHIR Bundle of Conditions where `category` is `problem-list-item`

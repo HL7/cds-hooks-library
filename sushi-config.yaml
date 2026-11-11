@@ -88,6 +88,9 @@ pages:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
       valueCode: draft
   medication-verify.md:
+    extension:
+    - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+      valueCode: trial-use
   order-dispatch.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -116,6 +119,11 @@ pages:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
       valueCode: trial-use
+  changes.md:
+    title: Changes
+    extension:
+    - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+      valueCode: informative
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -135,6 +143,8 @@ parameters:
   shownav: true
   related-ig: module:cdshooks=hl7.fhir.uv.cds-hooks
   auto-oid-root: 2.16.840.1.113883.4.642.40.94
+  # highlight new-content / modified-content markers by default (ballot review)
+  toggle-changes: true
 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

@@ -3,7 +3,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
-| hookVersion | 1.1.0 |
+| hookVersion | <span class="modified-content">1.1.0</span> |
 | hookMaturity | [5 - Mature]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
@@ -14,6 +14,7 @@ This hook is among the last workflow events before an order is promoted out of a
 The context contains all order details, such as dose, quantity, route, etc, 
 although the order has not yet been signed and therefore still exists in a draft status. 
 Use this hook when your service requires all order details.
+{:.modified-content}
 
 This hook can also be used when an order or set of orders is being 're-signed' after revision (e.g. change
 to status, extending dates, or other changes allowed to signed orders within the system's workflow).  In this
@@ -23,20 +24,21 @@ mixture of new and revised orders.
 This hook is intended to replace (deprecate) the `medication-prescribe` and `order-review` hooks. 
 
 ![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
+{:.modified-content}
 
 #### Context
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, `PractitionerRole/123` or `Practitioner/abc`.
+`userId` | REQUIRED | Yes | *string* | <span class="modified-content">The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, `PractitionerRole/123` or `Practitioner/abc`.</span>
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
-`draftOrders` | REQUIRED | No | *object* | A Bundle of FHIR request resources representing orders that either aren't yet signed (i.e. in draft status) from the current ordering session, or less commonly are being re-signed due to updates that are allowed on signed orders (such as changing dates). 
+`draftOrders` | REQUIRED | No | *object* | <span class="modified-content">A Bundle of FHIR request resources representing orders that either aren't yet signed (i.e. in draft status) from the current ordering session, or less commonly are being re-signed due to updates that are allowed on signed orders (such as changing dates).</span>
 {:.grid}
 
 #### A Note Concerning FHIR Versions
 
-CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the most commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
+<span class="modified-content">CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the most commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive.</span>
 * DSTU2 - FHIR Bundle of MedicationOrder, ProcedureRequest
 * STU3 - FHIR Bundle of MedicationRequest, ProcedureRequest
 * R4 - FHIR Bundle of MedicationRequest, ServiceRequest
@@ -44,6 +46,8 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
 #### Examples
 
 ##### Example (R4)
+
+<div class="modified-content" markdown="1">
 
 ```json
 {
@@ -223,8 +227,11 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
    }
 }
 ```
+</div>
 
 ##### Example (STU3)
+
+<div class="modified-content" markdown="1">
 
 ```json
 {
@@ -406,8 +413,11 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
    }
 }
 ```
+</div>
 
 ##### Example (DSTU2)
+
+<div class="modified-content" markdown="1">
 
 ```json
 "context":{
@@ -553,6 +563,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
   }
 }
 ```
+</div>
 
 #### Change Log
 
@@ -560,5 +571,5 @@ Version | Description
 ---- | ----
 1.0 | Initial Release
 1.0.1 | Add DeviceRequest to list of order resources for R4.
-1.1.0 | Updated hook to allow for use in order-revision situations
+1.1.0 | <span class="modified-content">Updated hook to allow for use in order-revision situations</span>
 {:.grid}

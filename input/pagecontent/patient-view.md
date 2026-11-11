@@ -17,7 +17,7 @@ The patient whose record was opened, including their encounter, if applicable.
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.  Must be in the format `[ResourceType]/[id]`.<br />For this hook, the user is expected to be of type Practitioner, PractitionerRole, Patient, or RelatedPerson.<br /> Patient or RelatedPerson are appropriate when a patient or their proxy are viewing the record.<br />For example, Practitioner/abc or Patient/123.
+`userId` | REQUIRED | Yes | *string* | <span class="modified-content">The id of the current user.  Must be in the format `[ResourceType]/[id]`.<br />For this hook, the user is expected to be of type Practitioner, PractitionerRole, Patient, or RelatedPerson.<br /> Patient or RelatedPerson are appropriate when a patient or their proxy are viewing the record.<br />For example, Practitioner/abc or Patient/123.</span>
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of the current encounter in context
 {:.grid}
