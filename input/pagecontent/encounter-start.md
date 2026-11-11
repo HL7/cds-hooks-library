@@ -17,7 +17,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
-| hookVersion | 1.0 |
+| hookVersion | <span class="modified-content">1.0.1</span> |
 | hookMaturity | [1 - Submitted]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
@@ -64,4 +64,5 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+1.0.1 | <span class="new-content">Added encounter workflow diagram ([FHIR-51509](https://jira.hl7.org/browse/FHIR-51509)) and a feedback question on `episodeOfCareId` ([FHIR-25763](https://jira.hl7.org/browse/FHIR-25763)); removed version-specific FHIR resource links and added a FHIR version note ([FHIR-50078](https://jira.hl7.org/browse/FHIR-50078)); clarified Encounter status wording</span>
 {:.grid}

@@ -47,5 +47,5 @@ Field | Optionality | Prefetch Token | Type | Description
 
 Version | Description
 ---- | ----
-1.0 | Initial Release
+<span class="modified-content">0.1.0</span> | Initial Release
 {:.grid}

@@ -3,7 +3,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
-| hookVersion | <span class="modified-content">1.1.0</span> |
+| hookVersion | <span class="modified-content">1.1.1</span> |
 | hookMaturity | [5 - Mature]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
@@ -572,4 +572,5 @@ Version | Description
 1.0 | Initial Release
 1.0.1 | Add DeviceRequest to list of order resources for R4.
 1.1.0 | <span class="modified-content">Updated hook to allow for use in order-revision situations</span>
+1.1.1 | <span class="new-content">Added Bundle `type` to examples ([FHIR-52111](https://jira.hl7.org/browse/FHIR-52111)); removed version-specific FHIR resource links ([FHIR-50078](https://jira.hl7.org/browse/FHIR-50078)); constrained workflow diagram width ([FHIR-50076](https://jira.hl7.org/browse/FHIR-50076)); corrected typographical errors</span>
 {:.grid}

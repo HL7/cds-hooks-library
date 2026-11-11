@@ -248,7 +248,7 @@ medication | REQUIRED | No | object | A FHIR MedicationRequest resource (Medicat
 
 Version | Description
 ---- | ----
-1.0 | Initial Release
+0.1.0 | Initial Release
 {:.grid}
 
 </div>

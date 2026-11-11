@@ -3,7 +3,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 2.0 |
-| hookVersion | 0.1.0 |
+| hookVersion | <span class="modified-content">0.1.1</span> |
 | hookMaturity | [1 - Submitted]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
@@ -182,4 +182,5 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 0.1.0 | Initial Release 
+0.1.1 | <span class="new-content">Added medication refill workflow diagram ([FHIR-51509](https://jira.hl7.org/browse/FHIR-51509)); corrected typographical errors</span>
 {:.grid}

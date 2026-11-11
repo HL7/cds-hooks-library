@@ -7,7 +7,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 2.0 |
-| hookVersion | 1.1 |
+| hookVersion | <span class="modified-content">1.1.1</span> |
 | hookMaturity | [0 - Draft]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
@@ -78,4 +78,5 @@ Version | Description
 ---- | ----
 1.0 | Initial Release
 1.1 | Adjusted context names and cardinalities based on feedback
+1.1.1 | <span class="new-content">Corrected the example and `fulfillmentTasks` description to use `dispatchedOrders`; removed version-specific FHIR resource links and added a FHIR version note ([FHIR-50078](https://jira.hl7.org/browse/FHIR-50078)); corrected typographical errors</span>
 {:.grid}

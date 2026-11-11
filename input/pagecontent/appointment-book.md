@@ -15,7 +15,7 @@
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
-| hookVersion | 1.0 |
+| hookVersion | <span class="modified-content">1.0.1</span> |
 | hookMaturity | [1 - Submitted]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 #### Workflow
@@ -278,4 +278,5 @@ Field | Optionality | Prefetch Token | Type | Description
 Version | Description
 ---- | ----
 1.0 | Initial Release
+1.0.1 | <span class="new-content">Corrected examples to use a Bundle of Appointments ([FHIR-45282](https://jira.hl7.org/browse/FHIR-45282)); described CDS Services as aiding scheduling decisions ([FHIR-42139](https://jira.hl7.org/browse/FHIR-42139)); added encounter workflow diagram ([FHIR-51509](https://jira.hl7.org/browse/FHIR-51509)); removed version-specific FHIR resource links and added a FHIR version note ([FHIR-50078](https://jira.hl7.org/browse/FHIR-50078))</span>
 {:.grid}
