@@ -4,17 +4,6 @@
     This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
 </blockquote>
 
-<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
-  <p>
-    <b>Looking for Feedback:</b>
-    Hey implementers, we want to hear from you!
-    <ul>
-      <li>Have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
-    </ul>
-  </p>
-</blockquote>
-
-
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
@@ -26,16 +15,22 @@
 
 This hook is invoked when the user is performing the discharge process for an encounter where the notion of 'discharge' is relevant - typically an inpatient encounter.  It may be invoked at the start and end of the discharge process or any time between those two points.  It allows hook services to intervene in the decision of whether discharge is appropriate, to verify discharge medications, to check for continuity of care planning, to ensure necessary documentation is present for discharge processing, etc.
 
+![Encounter Workflow Diagram](encounterflow.svg){:style="max-width:100%; height:auto;"}
+
+We are seeking implementer feedback on this workflow; see [Workflow Feedback](index.html#workflow-feedback).
+
 #### Context
 
 The patient who is being discharged and the encounter being ended.
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `Practitioner/123`
-`patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the being discharged
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, `Practitioner/123`
+`patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the patient being discharged
 `encounterId` | REQUIRED | Yes | *string* | The FHIR `Encounter.id` of the Encounter being ended
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Examples
 

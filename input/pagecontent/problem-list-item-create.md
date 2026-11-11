@@ -4,17 +4,6 @@
     This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>snapshot</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Draft</a>.
 </blockquote>
 
-<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
-  <p>
-    <b>Looking for Feedback:</b>
-    Hey implementers, we want to hear from you!
-    <ul>
-      <li>Have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
-    </ul>
-  </p>
-</blockquote>
-
-
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
@@ -32,11 +21,13 @@ The context of the hook includes these new conditions. Note that this hook occur
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitioner.html).<br />For example, PractitionerRole/123 or Practitioner/abc.
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, PractitionerRole/123 or Practitioner/abc.
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `conditions` | REQUIRED | No | *object* | DSTU2 - FHIR Bundle of Conditions where `category` is `problem-list-item`<br/> STU3 - FHIR Bundle of Conditions where `category` is `problem-list-item`<br/> R4 - FHIR Bundle of Conditions where `category` is `problem-list-item`
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Examples
 

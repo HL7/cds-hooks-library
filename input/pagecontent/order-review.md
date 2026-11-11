@@ -9,7 +9,7 @@
 
 #### Deprecation Notice
 
-This hook is deprecated in favor of the `order-sign` hooks, with the goal of  clarifying workflow trigger points and supporting orders beyond medications. In this refactoring, `medication-prescribe` and `order-review` hooks are being deprecated in favor of newly created [`order-select`](order-select.html) and [`order-sign`](order-sign.html) hooks. This notice is a placeholder to this effect while CDS Hooks determines the [appropriate process for deprecating hooks](https://github.com/cds-hooks/docs/issues/433).
+This hook is deprecated in favor of the `order-sign` hooks, with the goal of clarifying workflow trigger points and supporting orders beyond medications. In this refactoring, `medication-prescribe` and `order-review` hooks are being deprecated in favor of newly created [`order-select`](order-select.html) and [`order-sign`](order-sign.html) hooks. This notice is a placeholder to this effect while CDS Hooks determines the [appropriate process for deprecating hooks](https://jira.hl7.org/browse/FHIR-59798).
 
 #### Workflow
 
@@ -21,11 +21,13 @@ The set of orders being reviewed for signature on-screen. All FHIR resources in 
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html).<br />For example, `Practitioner/123`
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner.<br />For example, `Practitioner/123`
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of the current encounter in context
 `orders` | REQUIRED | No | *object* | DSTU2 - FHIR Bundle of MedicationOrder, DiagnosticOrder, DeviceUseRequest, ReferralRequest, ProcedureRequest, NutritionOrder, VisionPrescription with _draft_ status <br/> STU3 - FHIR Bundle of MedicationRequest, ReferralRequest, ProcedureRequest, NutritionOrder, VisionPrescription with _draft_ status
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Examples
 

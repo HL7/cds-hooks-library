@@ -1,9 +1,5 @@
 ### `order-select`
 
-<blockquote >
-    This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
-</blockquote>
-
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 1.0 |
@@ -18,9 +14,11 @@ This hook occurs when a clinician initially selects one or more new orders from 
 
 `order-select` is among the first workflow events for an order entering a draft status. The context of this hook may include defaulted order details upon the clinician selecting the order from the order catalogue of the CPOE, or upon her manual selection of order details (e.g. dose, quantity, route, etc). CDS services should expect some of the order information to not yet be specified. Additionally, the context may include previously selected orders that are not yet signed from the same ordering session. 
 
+Order entry is a focused clinical workflow, and interrupting it adds to clinician burden and alert fatigue. This hook fires when an order is initially selected, not each time the clinician changes a detail of that order. Even so, CDS Services should only return cards from this hook when the guidance is actionable at the point of selection, and should set the card [`indicator`]({{site.data.related.cdshooks.link}}/index.html#card-attributes) to reflect its actual urgency. Guidance that depends on order details that are typically completed later in the ordering session may be better suited to the [order-sign](order-sign.html) hook.
+
 This hook is intended to replace (deprecate) the medication-prescribe hook.
 
-![Ordering Flow Diagram](orderingflow.png)
+![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
 
 #### Context
 
@@ -29,7 +27,7 @@ The context of this hook distinguishes between the list of unsigned orders from 
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `PractitionerRole/123` or `Practitioner/abc`.
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, `PractitionerRole/123` or `Practitioner/abc`.
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `selections` | REQUIRED | No| *array* | The FHIR id of the newly selected order(s).<br />The `selections` field references FHIR resources in the `draftOrders` Bundle. For example, `MedicationRequest/103`.
@@ -38,7 +36,7 @@ Field | Optionality | Prefetch Token | Type | Description
 
 #### A Note Concerning FHIR Versions
 
-CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the mosty commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
+CDS Hooks is designed to be agnostic of FHIR version. For example, all versions of FHIR can represent in-progress orders but over time, the specific resource name and some of the important elements have changed.  Below are some of the most commonly used FHIR resources for representing an order in CDS Hooks. This list is intentionally not comprehensive. 
 * DSTU2 - FHIR Bundle of MedicationOrder, ProcedureRequest
 * STU3 - FHIR Bundle of MedicationRequest, ProcedureRequest
 * R4 - FHIR Bundle of MedicationRequest, ServiceRequest

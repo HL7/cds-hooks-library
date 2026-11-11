@@ -11,7 +11,7 @@ This is the continuous integration, community release of the CDS Hooks specifica
 ## CDS Hooks Library
 
 ### Introduction
-The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The Library is an HL7 publication at the level of [Standard for Trial Use](https://hl7.org/fhir/versions.html#std-process). The names of the below hooks hyperlink to their individual specification and the number following their name indicates their specific maturity, according to the [CDS Hooks Maturity Model]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model). All hooks are intended to be used by systems conforming to the [HL7 CDS Hooks Implementation Guide]({{site.data.related.cdshooks.link}}/index.html). 
+The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The Library is an HL7 publication at the level of [Standard for Trial Use](https://hl7.org/fhir/versions.html#std-process). The names of the below hooks hyperlink to their individual specification and the number following their name indicates their specific maturity, according to the [CDS Hooks Maturity Model]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model). Because hook maturity is based on the extent of implementation, client and CDS Service implementations of each hook are tracked on the [CDS Hooks Availability](https://github.com/cds-hooks/docs/wiki/CDS-Hooks-Availability) page, and implementers are encouraged to add their own implementations there. All hooks are intended to be used by systems conforming to the [HL7 CDS Hooks Implementation Guide]({{site.data.related.cdshooks.link}}/index.html). 
 
 New hooks are proposed in a [prescribed format]({{site.data.related.cdshooks.link}}/index.html#hook-definition-format) using the [documentation template](template.html) by submitting a pull request for community feedback. Hooks are versioned, and mature according to the Hook Maturity Model.
 Anyone may propose a new CDS Hooks hook. New hooks will continue to be specified and matured in the Library while changes to the base CDS Hooks Implementation Guide become infrequent and tightly constrained.
@@ -31,6 +31,23 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 * [problem-list-item-create](problem-list-item-create.html) (1)
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
+
+### Workflow Feedback {#workflow-feedback}
+
+<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
+  <b>Looking for Feedback:</b>
+  Several hooks are used together across a larger clinical workflow. We are seeking implementer feedback on these overall workflows, including the workflow diagrams on the linked hook pages:
+  <ul>
+    <li>Encounter start to finish: <a href="appointment-book.html">appointment-book</a>, <a href="encounter-start.html">encounter-start</a>, <a href="encounter-discharge.html">encounter-discharge</a></li>
+    <li>Medication refill: <a href="order-sign.html">order-sign</a>, <a href="medication-refill.html">medication-refill</a></li>
+    <li>Ordering: <a href="order-select.html">order-select</a>, <a href="order-sign.html">order-sign</a>, <a href="order-dispatch.html">order-dispatch</a></li>
+    <li>The Da Vinci Coverage Requirements Discovery (CRD), Documentation Templates and Rules (DTR) and Prior Authorization Support (PAS) flow</li>
+  </ul>
+  Have you encountered any useful documentation, references or diagrams that help illustrate these workflows? Please share!
+</blockquote>
+
+### Code system
+Implementers who need to refer to CDS Hooks using HL7's binding machinery (e.g. in CapabilityStatements) may make use of the codes defined in the CodeSystem found [here](CodeSystem-HookCodes.html).
 
 ### Intellectual Property Statements
 

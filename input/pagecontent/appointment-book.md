@@ -1,18 +1,13 @@
 ### `appointment-book`
 
-<blockquote >
-    This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
-</blockquote>
-
 <blockquote style="background-color: rgba(255, 213, 128, 0.5);">
   <p>
     <b>Looking for Feedback:</b>
     Hey implementers, we want to hear from you!
     <ul>
-      <li>What obstacles are there to limiting this hook to firing only when the appointment is  confirmed or finalized as booked?</li>
+      <li>What obstacles are there to limiting this hook to firing only when the appointment is confirmed or finalized as booked?</li>
       <li>For which users should this hook fire?</li>
       <li>Many appointments are scheduled directly into the EHR by the patient, without provider staff involvement ...</li>
-      <li>Lastly, have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
     </ul>
   </p>
 </blockquote>
@@ -25,7 +20,11 @@
 {:.grid}
 #### Workflow
 
-This hook is invoked when the user is scheduling one or more future encounters/visits for the patient.  For example, the `appointment-book` hook may be triggered for an appointment with the appointment creator, a clinician within the same organization as the appointment creator or even for an appointment outside the creator's organization.  It may be invoked at the start and end of the booking process and/or any time between those two points.  This hook enables CDS Services to intervene in the decision of when future appointments should be scheduled, where they should be scheduled, what services should be booked, to identify actions that need to occur prior to scheduled appointments, etc.  
+This hook is invoked when the user is scheduling one or more future encounters/visits for the patient.  For example, the `appointment-book` hook may be triggered for an appointment with the appointment creator, a clinician within the same organization as the appointment creator or even for an appointment outside the creator's organization.  It may be invoked at the start and end of the booking process and/or any time between those two points.  This hook enables CDS Services to aid in the decision of when future appointments should be scheduled, where they should be scheduled, what services should be booked, to identify actions that need to occur prior to scheduled appointments, etc.  
+
+![Encounter Workflow Diagram](encounterflow.svg){:style="max-width:100%; height:auto;"}
+
+We are seeking implementer feedback on this workflow; see [Workflow Feedback](index.html#workflow-feedback).
 
 #### Context
 
@@ -33,11 +32,13 @@ The Patient whose appointment(s) are being booked, as well as the proposed Appoi
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user could be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html), [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html), [Patient](https://www.hl7.org/fhir/patient.html), or [RelatedPerson](https://www.hl7.org/fhir/relatedperson.html).<br />For example, `PractitionerRole/123`. Patient or RelatedPerson are appropriate when a patient or their proxy are booking the appointment. 
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user could be of type Practitioner, PractitionerRole, Patient, or RelatedPerson.<br />For example, `PractitionerRole/123`. Patient or RelatedPerson are appropriate when a patient or their proxy are booking the appointment. 
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of Patient appointment(s) is/are for
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of Encounter where booking was initiated
 `appointments` | REQUIRED | No | *object* | DSTU2/STU3/R4 - FHIR Bundle of Appointments in 'proposed' state
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Examples
 
@@ -162,7 +163,7 @@ Field | Optionality | Prefetch Token | Type | Description
           "id": "example",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brian MRI results discussion</div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brain MRI results discussion</div>"
           },
           "status": "proposed",
           "serviceCategory": {
