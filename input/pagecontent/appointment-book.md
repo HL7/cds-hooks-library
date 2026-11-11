@@ -33,11 +33,13 @@ The Patient whose appointment(s) are being booked, as well as the proposed Appoi
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user could be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html), [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html), [Patient](https://www.hl7.org/fhir/patient.html), or [RelatedPerson](https://www.hl7.org/fhir/relatedperson.html).<br />For example, `PractitionerRole/123`. Patient or RelatedPerson are appropriate when a patient or their proxy are booking the appointment. 
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user could be of type Practitioner, PractitionerRole, Patient, or RelatedPerson.<br />For example, `PractitionerRole/123`. Patient or RelatedPerson are appropriate when a patient or their proxy are booking the appointment. 
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of Patient appointment(s) is/are for
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of Encounter where booking was initiated
 `appointments` | REQUIRED | No | *object* | DSTU2/STU3/R4 - FHIR Bundle of Appointments in 'proposed' state
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Examples
 

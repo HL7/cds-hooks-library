@@ -32,7 +32,7 @@ This hook is intended to replace (deprecate) the `medication-prescribe` and `ord
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html) or [PractitionerRole](https://www.hl7.org/fhir/practitionerrole.html).<br />For example, `PractitionerRole/123` or `Practitioner/abc`.
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner or PractitionerRole.<br />For example, `PractitionerRole/123` or `Practitioner/abc`.
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `draftOrders` | REQUIRED | No | *object* | A Bundle of FHIR request resources with a draft status, representing orders that aren't yet signed from the current ordering session. 
