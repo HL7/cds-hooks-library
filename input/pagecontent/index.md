@@ -32,6 +32,9 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
 
+### Code system
+Implementers who need to refer to CDS Hooks using HL7's binding machinery (e.g. in CapabilityStatements) may make use of the codes defined in the CodeSystem found [here](CodeSystem-HookCodes.html).
+
 ### Intellectual Property Statements
 
 CDS Hooks is the copyright of HL7 International and Boston Children's Hospital. The CDS Hooks specification is licensed under a Creative Commons Attribution 4.0 International License. All source code for CDS Hooks is available at [https://github.com/cds-hooks](https://github.com/cds-hooks).
@@ -39,11 +42,11 @@ CDS Hooks is the copyright of HL7 International and Boston Children's Hospital. 
 <!-- IGs that don't define resources can hide these in a div tag, see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Orphaned.20xhtml.20fragments.3F/near/370612006 -->
 
 <div style="display:none">
-{% include ip-statements.xhtml %}
+{% lang-fragment ip-statements.xhtml %}
 
-{% include cross-version-analysis.xhtml %}
+{% lang-fragment cross-version-analysis.xhtml %}
 
-{% include dependency-table.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
 
-{% include globals-table.xhtml %}
+{% lang-fragment globals-table.xhtml %}
 </div>

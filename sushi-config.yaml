@@ -34,9 +34,14 @@ extension:
 #
 
 dependencies:
+  # the CDS Hooks Library should always reference the most recent published version of the base spec
   hl7.fhir.uv.cds-hooks:
     id: cdshooks
-    version: latest          # the Library should always reference the most recent published version of the base spec
+    version: latest
+  hl7.fhir.uv.tools.r4:
+    version: 1.1.0
+    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
+    id: tools
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -82,6 +87,7 @@ pages:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
       valueCode: draft
+  medication-verify.md:
   order-dispatch.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -128,6 +134,7 @@ parameters:
   excludettl: true
   shownav: true
   related-ig: module:cdshooks=hl7.fhir.uv.cds-hooks
+  auto-oid-root: 2.16.840.1.113883.4.642.40.94
 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
