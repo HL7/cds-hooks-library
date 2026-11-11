@@ -1,0 +1,12 @@
+Logical: CDSHookEncounterDischargeContext
+Parent: CDSHookContext
+Id: CDSHookEncounterDischargeContext
+Title: "CDS Hooks Specific Context for encounter-discharge (Logical Definition)"
+Description: "This structure is defined to allow the FHIR Validator to validate a CDSHooks encounter-discharge context."
+* ^status = #draft
+* ^experimental = true
+* . ^short = "The context for the encounter-discharge hook"
+* userId 1..1 string "The id of the current user. Must be in the format [ResourceType]/[id]." "For this hook, the user is expected to be of type Practitioner, PractitionerRole. For example, Practitioner/abc."
+* userId obeys ord-1
+* patientId 1..1 id "The FHIR Patient.id of the current patient in context" "The FHIR Patient.id of the current patient in context"
+* encounterId 1..1 id "The FHIR Encounter.id of the current encounter in context" "The FHIR Encounter.id of the current encounter in context"

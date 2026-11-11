@@ -15,6 +15,8 @@
 
 <mark>Describe when the hook occurs in a workflow. Hook creators SHOULD include as much detail and clarity as possible to minimize any ambiguity or confusion amongst implementers. The hook name should take the form `noun-verb`, such as `encounter-start`, or `order-select` according to the [Hook Definition Format]({{site.data.related.cdshooks.link}}/index.html#hook-definition-format).</mark>
 
+<mark>Consider creating a diagram to illustrate the workflow in which this hook is called. The [order-sign workflow diagram](order-sign.html#workflow) was created with a tool like: https://www.bottlecaps.de/rr/ui. </mark>
+
 ## Context
 
 <mark>Define context values that are available when this hook occurs, and indicate whether they must be provided, and whether they are available for parameterizing prefetch templates.</mark>

@@ -7,6 +7,13 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="CodeSystem/HookCodes" key="CodeSystem-HookCodes" name="CDS Hook Codes"/>
+<artifact id="StructureDefinition/CDSHookOrderSelectContext" key="StructureDefinition-CDSHookOrderSelectContext" name="CDS Hook Specific Context for order-select (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookOrderSignContext" key="StructureDefinition-CDSHookOrderSignContext" name="CDS Hook Specific Context for order-sign (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookPatientViewContext" key="StructureDefinition-CDSHookPatientViewContext" name="CDS Hook Specific Context for patient-view (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookAppointmentBookContext" key="StructureDefinition-CDSHookAppointmentBookContext" name="CDS Hooks Specific Context for appointment-book (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookEncounterDischargeContext" key="StructureDefinition-CDSHookEncounterDischargeContext" name="CDS Hooks Specific Context for encounter-discharge (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookEncounterStartContext" key="StructureDefinition-CDSHookEncounterStartContext" name="CDS Hooks Specific Context for encounter-start (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookOrderDispatchContext" key="StructureDefinition-CDSHookOrderDispatchContext" name="CDS Hooks Specific Context for order-dispatch (Logical Definition)"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="allergyintolerance-create" name="Allergyintolerance Create"/>
@@ -16,6 +23,7 @@
 <page key="encounter-start" name="Encounter Start"/>
 <page key="medication-prescribe" name="Medication Prescribe"/>
 <page key="medication-refill" name="Medication Refill"/>
+<page key="medication-verify" name="Medication Verify"/>
 <page key="order-dispatch" name="Order Dispatch"/>
 <page key="order-review" name="Order Review"/>
 <page key="order-select" name="Order Select"/>

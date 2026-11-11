@@ -4,6 +4,16 @@
     This page defines a workflow <a href="{{site.data.related.cdshooks.link}}/index.html#hooks">hook</a> for the purpose of providing clinical decision support using CDS Hooks. This is a <b>release</b> at the level of <a href="http://hl7.org/fhir/versions.html#std-processs">Trial Use</a>.
 </blockquote>
 
+<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
+  <p>
+    <b>Looking for Feedback:</b>
+    Hey implementers, we want to hear from you!
+    <ul>
+      <li>Have you encountered any useful documentation, references or diagrams that help illustrate the use or workflow of this hook? Please share!</li>
+    </ul>
+  </p>
+</blockquote>
+
 | Metadata | Value |
 | ---- | ---- |
 | specificationVersion | 2.0 |
@@ -26,7 +36,7 @@ Field | Optionality | Prefetch Token | Type | Description
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `dispatchedOrders` | REQUIRED | Yes | *array* |  Collection of the FHIR local references for the Request resource(s) for which fulfillment is sought  E.g. `ServiceRequest/123`
 `performer` | REQUIRED | Yes | *string* |  The FHIR local reference for the Practitioner, PractitionerRole, Organization, CareTeam, etc. who is being asked to execute the order.  E.g. `Practitioner/456`
-`fulfillmentTasks` | OPTIONAL | No | *array* | DSTU2/STU3/R4/R5 - Collection of the Task instances (as objects) that provides a full description of the fulfillment request - including the timing and any constraints on fulfillment.  If Tasks are provided, each will be for a separate order and SHALL reference one of the dispatched-orders.
+`fulfillmentTasks` | OPTIONAL | No | *array* | DSTU2/STU3/R4/R5 - Collection of the Task instances (as objects) that provides a full description of the fulfillment request - including the timing and any constraints on fulfillment.  If Tasks are provided, each will be for a separate order and SHALL reference one of the dispatchedOrders. 
 {:.grid}
 
 #### Examples
@@ -35,7 +45,7 @@ Field | Optionality | Prefetch Token | Type | Description
 ```json
 "context":{
   "patientId" : "1288992",
-  "dispatched-orders" : ["ServiceRequest/proc002"],
+  "dispatchedOrders" : ["ServiceRequest/proc002"],
   "performer" : "Organization/some-performer",
   "fulfillment-tasks" : [{
     "resourceType" : "Task",

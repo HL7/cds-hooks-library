@@ -20,7 +20,7 @@ This hook occurs when a clinician initially selects one or more new orders from 
 
 This hook is intended to replace (deprecate) the medication-prescribe hook.
 
-![Ordering Flow Diagram](orderingflow.png)
+![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
 
 #### Context
 
@@ -56,6 +56,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
       "selections": [ "NutritionOrder/pureeddiet-simple", "MedicationRequest/smart-MedicationRequest-103" ],
       "draftOrders":{
          "resourceType":"Bundle",
+         "type": "collection",
          "entry":[
             {
                "resource":{
@@ -239,6 +240,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
       "selections": [ "NutritionOrder/pureeddiet-simple", "MedicationRequest/smart-MedicationRequest-103" ],
       "draftOrders":{
          "resourceType":"Bundle",
+         "type": "collection",
          "entry":[
             {
                "resource":{
@@ -420,6 +422,7 @@ CDS Hooks is designed to be agnostic of FHIR version. For example, all versions 
   "selections":[ "NutritionOrder/nest-patient-1-NUTR1", "MedicationOrder/smart-MedicationOrder-103" ],
   "draftOrders":{
     "resourceType":"Bundle",
+    "type": "collection",
     "entry":[
       {
         "resource":{
