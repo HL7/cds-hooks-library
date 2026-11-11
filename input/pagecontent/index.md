@@ -32,6 +32,20 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
 
+### Workflow Feedback {#workflow-feedback}
+
+<blockquote style="background-color: rgba(255, 213, 128, 0.5);">
+  <b>Looking for Feedback:</b>
+  Several hooks are used together across a larger clinical workflow. We are seeking implementer feedback on these overall workflows, including the workflow diagrams on the linked hook pages:
+  <ul>
+    <li>Encounter start to finish: <a href="appointment-book.html">appointment-book</a>, <a href="encounter-start.html">encounter-start</a>, <a href="encounter-discharge.html">encounter-discharge</a></li>
+    <li>Medication refill: <a href="order-sign.html">order-sign</a>, <a href="medication-refill.html">medication-refill</a></li>
+    <li>Ordering: <a href="order-select.html">order-select</a>, <a href="order-sign.html">order-sign</a>, <a href="order-dispatch.html">order-dispatch</a></li>
+    <li>The Da Vinci Coverage Requirements Discovery (CRD), Documentation Templates and Rules (DTR) and Prior Authorization Support (PAS) flow</li>
+  </ul>
+  Have you encountered any useful documentation, references or diagrams that help illustrate these workflows? Please share!
+</blockquote>
+
 ### Code system
 Implementers who need to refer to CDS Hooks using HL7's binding machinery (e.g. in CapabilityStatements) may make use of the codes defined in the CodeSystem found [here](CodeSystem-HookCodes.html).
 
