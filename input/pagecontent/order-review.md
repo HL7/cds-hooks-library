@@ -21,11 +21,13 @@ The set of orders being reviewed for signature on-screen. All FHIR resources in 
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html).<br />For example, `Practitioner/123`
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner.<br />For example, `Practitioner/123`
 `patientId` | REQUIRED | Yes | *string* | The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* | The FHIR `Encounter.id` of the current encounter in context
 `orders` | REQUIRED | No | *object* | DSTU2 - FHIR Bundle of MedicationOrder, DiagnosticOrder, DeviceUseRequest, ReferralRequest, ProcedureRequest, NutritionOrder, VisionPrescription with _draft_ status <br/> STU3 - FHIR Bundle of MedicationRequest, ReferralRequest, ProcedureRequest, NutritionOrder, VisionPrescription with _draft_ status
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Examples
 

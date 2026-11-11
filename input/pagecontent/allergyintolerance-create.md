@@ -16,11 +16,13 @@ This hook fires during the act of finalizing the entry of a new allergy, such th
 
 Field | Optionality | Prefetch Token | Type | Description
 ----- | -------- | ---- | ---- | ----
-`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type [Practitioner](https://www.hl7.org/fhir/practitioner.html).<br />For example, `Practitioner/123`
+`userId` | REQUIRED | Yes | *string* | The id of the current user.<br />For this hook, the user is expected to be of type Practitioner.<br />For example, `Practitioner/123`
 `patientId` | REQUIRED | Yes | *string* |  The FHIR `Patient.id` of the current patient in context
 `encounterId` | OPTIONAL | Yes | *string* |  The FHIR `Encounter.id` of the current encounter in context
 `allergyIntolerance` | REQUIRED | No | *object* | R4/STU3/DSTU2 - FHIR AllergyIntolerance instance
 {:.grid}
+
+{% include fhir-version-note.md %}
 
 #### Example
 
