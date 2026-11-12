@@ -6,6 +6,10 @@ In this ballot, new and modified content is highlighted throughout the specifica
 
 ### STU 2 Ballot (version 2.0.0-ballot)
 
+#### Known Issues
+
+* The hook context logical models (see [Artifacts](artifacts.html)) derive from the `CDSHookContext` logical model published in the [FHIR Tools IG](https://build.fhir.org/ig/FHIR/fhir-tools-ig/). These logical models have been added to the CDS Hooks base specification, but no published version of CDS Hooks includes them yet, so this ballot continues to depend on the Tools IG for them. Once the CDS Hooks base specification is published (expected early January 2027), the logical models in this Implementation Guide will be updated to derive from the CDS Hooks publication. Balloters do not need to submit comments on this issue. (see [Known Issues](index.html#known-issues))
+
 #### Non-compatible Changes
 
 There are no non-compatible changes in this release.

@@ -53,6 +53,10 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 ### Code system
 Implementers who need to refer to CDS Hooks using HL7's binding machinery (e.g. in CapabilityStatements) may make use of the codes defined in the CodeSystem found [here](CodeSystem-HookCodes.html).
 
+### Known Issues {#known-issues}
+
+The hook context logical models (see [Artifacts](artifacts.html)) derive from the `CDSHookContext` logical model published in the [FHIR Tools IG](https://build.fhir.org/ig/FHIR/fhir-tools-ig/). These logical models have been added to the CDS Hooks base specification, but no published version of CDS Hooks includes them yet, so this ballot continues to depend on the Tools IG for them. Once the CDS Hooks base specification is published (expected early January 2027), the logical models in this Implementation Guide will be updated to derive from the CDS Hooks publication. Balloters do not need to submit comments on this issue.
+
 </div>
 
 ### Intellectual Property Statements
