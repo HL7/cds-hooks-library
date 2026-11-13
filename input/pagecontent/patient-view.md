@@ -4,7 +4,7 @@
 | ---- | ---- |
 | specificationVersion | 1.0 |
 | hookVersion | <span class="modified-content">1.0.1</span> |
-| hookMaturity | [5 - Mature]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
+| hookMaturity | [6 - Normative]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model) |
 {:.grid}
 
 #### Workflow

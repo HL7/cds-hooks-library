@@ -8,6 +8,9 @@ This is the continuous integration, community release of the CDS Hooks specifica
 </p>
 -->
 
+This is the 2.0.0 ballot of the CDS Hooks Library, balloting as a mixed Normative/Trial-Use specification. The `patient-view` and `order-sign` hooks are balloted as normative. In addition to applying implementer feedback since the previous publication, we are seeking input on the hook maturity levels for each hook. For a complete list of changes applied, see the [Changes](changes.html) page.
+{:.note-to-balloters}
+
 ## CDS Hooks Library
 
 ### Introduction
@@ -56,6 +59,7 @@ Implementers who need to refer to CDS Hooks using HL7's binding machinery (e.g. 
 ### Known Issues {#known-issues}
 
 The hook context logical models (see [Artifacts](artifacts.html)) derive from the `CDSHookContext` logical model published in the [FHIR Tools IG](https://build.fhir.org/ig/FHIR/fhir-tools-ig/). These logical models have been added to the CDS Hooks base specification, but no published version of CDS Hooks includes them yet, so this ballot continues to depend on the Tools IG for them. Once the CDS Hooks base specification is published (expected early January 2027), the logical models in this Implementation Guide will be updated to derive from the CDS Hooks publication. Balloters do not need to submit comments on this issue.
+{:.note-to-balloters}
 
 </div>
 
