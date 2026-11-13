@@ -4,7 +4,7 @@
     "path": "http://cds-hooks.hl7.org/hooks/2.0.0-202701-ballot",
     "mode": "working",
     "status": "ballot",
-    "sequence": "STU 2",
-    "desc": "STU 2 Mixed Normative/Trial-Use Ballot",
+    "sequence": "R2",
+    "desc": "Release 2 Mixed Normative/Trial-Use Ballot",
     "first": false
 }
