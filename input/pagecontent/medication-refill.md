@@ -16,7 +16,7 @@ This hook does not fire for an initial prescription (see order-sign). "Re-prescr
 
 <div class="new-content" markdown="1">
 
-![Medication Refill Workflow Diagram](medicationrefillflow.svg){:style="max-width:100%; height:auto;"}
+![Medication Refill Workflow Diagram](medicationrefillflow.svg){:style="float:none; display:block; max-width:100%; height:auto;"}
 
 We are seeking implementer feedback on this workflow; see [Workflow Feedback](index.html#workflow-feedback).
 

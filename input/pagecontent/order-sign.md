@@ -23,7 +23,7 @@ mixture of new and revised orders.
 
 This hook is intended to replace (deprecate) the `medication-prescribe` and `order-review` hooks. 
 
-![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
+![Ordering Flow Diagram](orderingflow.png){:style="float:none; display:block; max-width:100%; height:auto;"}
 {:.modified-content}
 
 #### Context

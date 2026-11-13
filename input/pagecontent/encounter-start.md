@@ -32,7 +32,7 @@ The intention is that the cards from any invoked CDS Services are available at t
 
 <div class="new-content" markdown="1">
 
-![Encounter Workflow Diagram](encounterflow.svg){:style="max-width:100%; height:auto;"}
+![Encounter Workflow Diagram](encounterflow.svg){:style="float:none; display:block; max-width:100%; height:auto;"}
 
 We are seeking implementer feedback on this workflow; see [Workflow Feedback](index.html#workflow-feedback).
 

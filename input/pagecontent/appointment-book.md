@@ -25,7 +25,7 @@ This hook is invoked when the user is scheduling one or more future encounters/v
 
 <div class="new-content" markdown="1">
 
-![Encounter Workflow Diagram](encounterflow.svg){:style="max-width:100%; height:auto;"}
+![Encounter Workflow Diagram](encounterflow.svg){:style="float:none; display:block; max-width:100%; height:auto;"}
 
 We are seeking implementer feedback on this workflow; see [Workflow Feedback](index.html#workflow-feedback).
 

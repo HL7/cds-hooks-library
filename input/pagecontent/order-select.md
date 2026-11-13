@@ -19,7 +19,7 @@ Order entry is a focused clinical workflow, and interrupting it adds to clinicia
 
 This hook is intended to replace (deprecate) the medication-prescribe hook.
 
-![Ordering Flow Diagram](orderingflow.png){:style="max-width:100%; height:auto;"}
+![Ordering Flow Diagram](orderingflow.png){:style="float:none; display:block; max-width:100%; height:auto;"}
 {:.modified-content}
 
 #### Context
