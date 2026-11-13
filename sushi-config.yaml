@@ -82,7 +82,7 @@ pages:
   medication-prescribe.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: trial-use
+      valueCode: deprecated
   medication-refill.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -94,11 +94,11 @@ pages:
   order-dispatch.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: trial-use
+      valueCode: draft
   order-review.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: trial-use
+      valueCode: deprecated
   order-select.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -114,11 +114,11 @@ pages:
   problem-list-item-create.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: draft
+      valueCode: trial-use
   template.md:
     extension:
     - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-      valueCode: trial-use
+      valueCode: informative
   changes.md:
     title: Changes
     extension:
