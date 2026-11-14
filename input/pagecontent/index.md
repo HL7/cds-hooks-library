@@ -34,6 +34,7 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 * [order-sign](order-sign.html) (5)
 * [patient-view](patient-view.html) (5)
 * [problem-list-item-create](problem-list-item-create.html) (1)
+* [report-view](report-view.html) (0)
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
 
