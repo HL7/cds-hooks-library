@@ -54,3 +54,6 @@ Description: "A code system defining codes for all 'standard' hooks"
 * #problem-list-item-create  "Problem list item create"  "Invoked when a clinician has added one or more new problems to a patient's problem list"
   * ^property[0].code = #maturity-level
   * ^property[0].valueInteger = 1
+* #report-assist             "Report assist"             "Invoked when a provider requests assistance from an external and interoperable CDS during the reporting workflow"
+  * ^property[0].code = #maturity-level
+  * ^property[0].valueInteger = 0
