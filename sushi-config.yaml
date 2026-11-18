@@ -141,7 +141,7 @@ pages:
 parameters:
   excludettl: true
   shownav: true
-  related-ig: module:cdshooks=hl7.fhir.uv.cds-hooks#3.0.0-ballot
+  related-ig: module:cdshooks=hl7.fhir.uv.cds-hooks
   auto-oid-root: 2.16.840.1.113883.4.642.40.94
   # highlight new-content / modified-content markers by default (ballot review)
   toggle-changes: true
