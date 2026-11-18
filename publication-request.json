@@ -6,5 +6,8 @@
     "status": "ballot",
     "sequence": "R2 Normative",
     "desc": "Release 2 Mixed Normative/Trial-Use Ballot",
-    "first": false
+    "first": false,
+    "related" : {
+      "cdshooks": "3.0.0"
+    }
 }
