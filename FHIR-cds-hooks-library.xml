@@ -15,6 +15,7 @@
 <artifact id="StructureDefinition/CDSHookEncounterDischargeContext" key="StructureDefinition-CDSHookEncounterDischargeContext" name="CDS Hooks Specific Context for encounter-discharge (Logical Definition)"/>
 <artifact id="StructureDefinition/CDSHookEncounterStartContext" key="StructureDefinition-CDSHookEncounterStartContext" name="CDS Hooks Specific Context for encounter-start (Logical Definition)"/>
 <artifact id="StructureDefinition/CDSHookOrderDispatchContext" key="StructureDefinition-CDSHookOrderDispatchContext" name="CDS Hooks Specific Context for order-dispatch (Logical Definition)"/>
+<artifact id="StructureDefinition/CDSHookReportSignContext" key="StructureDefinition-CDSHookReportSignContext" name="CDS Hooks Specific Context for report-sign (Logical Definition)"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="allergyintolerance-create" name="Allergyintolerance Create"/>
@@ -33,6 +34,7 @@
 <page key="index" name="Overview"/>
 <page key="patient-view" name="Patient View"/>
 <page key="problem-list-item-create" name="Problem List Item Create"/>
+<page key="report-sign" name="Report Sign"/>
 <page key="toc" name="Table of Contents"/>
 <page key="template" name="Template"/>
 </specification>
