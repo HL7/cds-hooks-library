@@ -12,6 +12,7 @@ There are no non-compatible changes in this release.
 
 #### Compatible, Substantive Changes
 
+* Advanced the `patient-view` and `order-sign` hooks to maturity level 6 (Normative) per the CDS Hooks Maturity Model, and declared their standards status as Normative for this ballot (applied [here](patient-view.html), [here](order-sign.html), [here](index.html#hooks) and [here](CodeSystem-HookCodes.html))
 * [FHIR-49967](https://jira.hl7.org/browse/FHIR-49967): Added the new `medication-verify` hook (maturity level 1 - Submitted), invoked when a pharmacist is ready to verify a signed, active medication order (applied [here](medication-verify.html) and [here](index.html#hooks))
 * [FHIR-50322](https://jira.hl7.org/browse/FHIR-50322): Added the CDS Hook Codes code system, defining a code for each hook in the Library (including status and maturity-level properties) so hooks can be referenced through HL7 binding machinery such as CapabilityStatements (applied [here](CodeSystem-HookCodes.html) and [here](index.html#code-system))
 * [FHIR-53576](https://jira.hl7.org/browse/FHIR-53576): Updated the `order-sign` hook to version 1.1.0 and revised the `draftOrders` context description to allow orders that are being re-signed after revision (i.e. not in draft status), consistent with the order-revision workflow (applied [here](order-sign.html) and [here](order-sign.html#context))

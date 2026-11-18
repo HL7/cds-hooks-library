@@ -8,13 +8,34 @@ This is the continuous integration, community release of the CDS Hooks specifica
 </p>
 -->
 
-This is the 2.0.0 ballot of the CDS Hooks Library, balloting as a mixed Normative/Trial-Use specification. The `patient-view` and `order-sign` hooks are balloted as normative. In addition to applying implementer feedback since the previous publication, we are seeking input on the hook maturity levels for each hook. For a complete list of changes applied, see the [Changes](changes.html) page.
-{:.note-to-balloters}
+<div class="note-to-balloters" markdown="1">
+
+This is the 2.0.0 ballot of the CDS Hooks Library (Release 2), balloted as a mixed Normative/Trial-Use specification. The [`patient-view`](patient-view.html) and [`order-sign`](order-sign.html) hooks are balloted as **Normative**, and the other active hooks remain **Standard for Trial Use**. This ballot also applies implementer feedback received since the [STU 1 publication](https://cds-hooks.hl7.org/hooks/STU1).
+
+**Summary of changes**
+
+* `patient-view` and `order-sign` advance to maturity level 6 (Normative) and are balloted as normative content
+* New `medication-verify` hook (maturity level 1, Submitted) for pharmacist verification of signed medication orders
+* New [CDS Hook Codes](CodeSystem-HookCodes.html) code system defining a code, status and maturity level for each hook
+* New [logical models](artifacts.html) for hook contexts, so hook context can be validated with the FHIR Validator
+* `order-sign` (version 1.1.0) allows orders being re-signed after revision, and `order-select` adds guidance on limiting interruption of the ordering workflow
+* Workflow diagrams for the encounter, ordering and medication refill workflows, FHIR-version-neutral context tables, corrected examples, and editorial fixes, each recorded as a patch version in the hook's change log
+
+For the complete list of changes, with tracker references and links to where each change was applied, see the [Changes](changes.html) page. New and modified content is highlighted throughout the specification; use the **Highlight text changes?** checkbox at the top of each page to turn the highlighting on or off.
+
+**Questions for balloters**
+
+* **Normative readiness:** Are `patient-view` and `order-sign` stable and sufficiently implemented to be published as Normative?
+* **Hook maturity:** Is the maturity level assigned to each hook (shown in the [Hooks](#hooks) list and on each hook page) accurate, based on known implementations? Please also record implementations on the [CDS Hooks Availability](https://github.com/cds-hooks/docs/wiki/CDS-Hooks-Availability) page.
+* **Workflows:** Do the workflow diagrams accurately describe the encounter, ordering and medication refill workflows? See [Workflow Feedback](#workflow-feedback).
+* **Hook-specific questions:** Please respond to the "Looking for Feedback" questions on the [`appointment-book`](appointment-book.html) and [`encounter-start`](encounter-start.html) pages, including whether `episodeOfCareId` would be useful context for `encounter-start`.
+
+</div>
 
 ## CDS Hooks Library
 
 ### Introduction
-The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The Library is an HL7 publication at the level of [Standard for Trial Use](https://hl7.org/fhir/versions.html#std-process). The names of the below hooks hyperlink to their individual specification and the number following their name indicates their specific maturity, according to the [CDS Hooks Maturity Model]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model). Because hook maturity is based on the extent of implementation, client and CDS Service implementations of each hook are tracked on the [CDS Hooks Availability](https://github.com/cds-hooks/docs/wiki/CDS-Hooks-Availability) page, and implementers are encouraged to add their own implementations there. All hooks are intended to be used by systems conforming to the [HL7 CDS Hooks Implementation Guide]({{site.data.related.cdshooks.link}}/index.html). 
+The CDS Hooks Library contains specifications of industry standardized clinical workflow steps upon which remote clinical decision support can be requested. The Library is an HL7 publication with mixed [standards status](https://hl7.org/fhir/versions.html#std-process): the `patient-view` and `order-sign` hooks are Normative, and the remaining hooks are each published at the status shown on their page (Standard for Trial Use, Draft, or Deprecated). The names of the below hooks hyperlink to their individual specification and the number following their name indicates their specific maturity, according to the [CDS Hooks Maturity Model]({{site.data.related.cdshooks.link}}/index.html#hook-maturity-model). Because hook maturity is based on the extent of implementation, client and CDS Service implementations of each hook are tracked on the [CDS Hooks Availability](https://github.com/cds-hooks/docs/wiki/CDS-Hooks-Availability) page, and implementers are encouraged to add their own implementations there. All hooks are intended to be used by systems conforming to the [HL7 CDS Hooks Implementation Guide]({{site.data.related.cdshooks.link}}/index.html). 
 {:.modified-content}
 
 New hooks are proposed in a [prescribed format]({{site.data.related.cdshooks.link}}/index.html#hook-definition-format) using the [documentation template](template.html) by submitting a pull request for community feedback. Hooks are versioned, and mature according to the Hook Maturity Model.
@@ -31,8 +52,8 @@ See [https://cds-hooks.org/](https://cds-hooks.org/) for additional information,
 * {:.new-content} [medication-verify](medication-verify.html) (1)
 * [order-dispatch](order-dispatch.html) (0)
 * [order-select](order-select.html) (4)
-* [order-sign](order-sign.html) (5)
-* [patient-view](patient-view.html) (5)
+* [order-sign](order-sign.html) (6)
+* [patient-view](patient-view.html) (6)
 * [problem-list-item-create](problem-list-item-create.html) (1)
 * [medication-prescribe](medication-prescribe.html) (deprecated)
 * [order-review](order-review.html) (deprecated)
