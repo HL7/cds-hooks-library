@@ -8,6 +8,6 @@
     "desc": "Release 2 Mixed Normative/Trial-Use Ballot",
     "first": false,
     "related" : {
-      "cdshooks": "3.0.0"
+      "cdshooks": "3.0.0-ballot"
     }
 }
